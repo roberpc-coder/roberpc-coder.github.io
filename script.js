@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let gamesData = [];
     let filteredGames = [];
     let currentIndex = 0;
-    const batchSize = 50; // Cargar 50 juegos a la vez
+    const batchSize = 12; // Cargar 50 juegos a la vez
     const catalogContainer = document.getElementById('gameCatalog');
     const searchInput = document.getElementById('searchInput');
     const platformSelect = document.getElementById('platformSelect');
