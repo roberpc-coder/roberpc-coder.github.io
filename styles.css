@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+/* Contenedor principal del título y buscador */
+.title-search-container {
+  position: fixed;       /* Siempre fijo en pantalla */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #121212;
+  padding: 15px 20px;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Sección del título */
+.title-section {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; /* Evita que el título se encoja */
+}
+
+.title-section i {
+  font-size: 2rem;
+  color: #4CAF50;
+  margin-right: 12px;
+  vertical-align: middle;
+  text-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+  animation: pulse 2s infinite;
+}
+
+.title-section h1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #4CAF50, #8BC34A, #CDDC39);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  white-space: nowrap; /* Evita que el título se divida en líneas */
+}
+
+/* Sección del buscador */
+.search-section {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 700px; /* Ancho máximo para el buscador */
+  justify-content: flex-end; /* Alinea el buscador a la derecha */
+}
+
+#searchInput, #platformSelect {
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 16px;
+}
+
+#searchInput {
+  flex: 1;
+  min-width: 200px; /* Ancho mínimo para el input */
+}
+
+#platformSelect {
+  min-width: 150px; /* Ancho mínimo para el selector de plataforma */
+}
+
+/* 🧱 Columnas controladas */
+.catalog-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* móvil por defecto */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px; /* Espacio para el header fijo */
+}
+
+@media (min-width: 768px) {
+  .catalog-container {
+    grid-template-columns: repeat(4, 1fr); /* PC */
+  }
+}
+
+/* 🎮 Tarjetas grandes y verticales */
+.game-card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 🖼️ Portadas verticales sin recorte */
+.game-cover {
+  width: 100%;
+  aspect-ratio: 5 / 7;
+  object-fit: contain;
+  background-color: #333;
+  border-radius: 6px;
+}
+
+/* 📋 Info del juego */
+.game-info {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.game-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.2em;
+  min-height: calc(1.2em * 2);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 6px;
+  text-align: center; /* centrado del título */
+}
+
+/* 📏 Tamaño centrado debajo del título */
+.game-size {
+  font-size: 0.9rem;
+  color: #aaaaaa;
+  margin-bottom: 12px;
+  text-align: center; /* centrado */
+  display: block;
+}
+
+/* 📖 Botón de detalles */
+.details-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.details-btn:hover {
+  background-color: #45a049;
+}
+
+/* 📡 Estados */
+.loading, .error {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.error {
+  color: #ff5252;
+}
+
+/* 📱 Ajustes móviles */
+@media (max-width: 768px) {
+  .title-search-container {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .title-section {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .title-section i {
+    font-size: 1.8rem;
+  }
+  
+  .title-section h1 {
+    font-size: 1.5rem;
+  }
+  
+  .search-section {
+    max-width: 100%;
+    justify-content: center;
+  }
+  
+  #searchInput {
+    min-width: 150px;
+  }
+  
+  #platformSelect {
+    min-width: 120px;
+  }
+
+  .catalog-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 140px; /* Más margen porque en móviles el header ocupa más espacio */
+  }
+
+  .game-cover {
+    aspect-ratio: 5 / 7;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-search-container {
+    padding: 10px;
+  }
+  
+  .title-section i {
+    font-size: 1.5rem;
+    margin-right: 8px;
+  }
+  
+  .title-section h1 {
+    font-size: 1.2rem;
+  }
+  
+  .search-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #searchInput, #platformSelect {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .catalog-container {
+    margin-top: 160px;
+  }
+}
+
+/* ==================================== */
+/* ESTILOS NUEVOS PARA EL CARGA POR LOTES */
+/* ==================================== */
+
+/* Estilos para el contador de juegos - OCULTO POR DEFECTO */
+.games-counter {
+  display: none; /* Cambia a 'block' si quieres mostrarlo */
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #2a2a2a;
+  border-radius: 6px;
+  color: #aaaaaa;
+  font-size: 14px;
+  grid-column: 1 / -1; /* Ocupa todo el ancho de la cuadrícula */
+}
+
+/* Estilos para el indicador de carga */
+.loading-indicator {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.loading-spinner {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 3px solid #4CAF50;
+  width: 25px;
+  height: 25px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 8px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}

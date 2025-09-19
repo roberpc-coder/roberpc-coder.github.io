@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo ROBER®PC</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Agregamos Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <!-- Título y buscador en el mismo contenedor -->
+        <div class="title-search-container">
+            <div class="title-section">
+                <i class="fas fa-gamepad"></i>
+                <h1>Catálogo ROBER®PC</h1>
+            </div>
+            <div class="search-section">
+                <input type="text" id="searchInput" placeholder="Buscar juegos...">
+                <select id="platformSelect">
+                    <option value="all">Todas las plataformas</option>
+                    <option value="PC">PC</option>
+                    <option value="Online">Online</option>
+                    <option value="Emulados">Emulados</option>
+                    <option value="Nintendo Switch">Nintendo Switch</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div class="catalog-container" id="gameCatalog">
+        <!-- Las tarjetas de juegos se cargarán aquí dinámicamente -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
