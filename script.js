@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let gamesData = [];
     let filteredGames = [];
     let currentIndex = 0;
-    const batchSize = 12; // Cargar 12 juegos a la vez
+    const batchSize = 12;
     const catalogContainer = document.getElementById('gameCatalog');
     const searchInput = document.getElementById('searchInput');
     const platformSelect = document.getElementById('platformSelect');
-    let isLoading = false; // Variable para controlar el estado de carga
+    let isLoading = false;
     
     // Mostrar indicador de carga
     catalogContainer.innerHTML = '<div class="loading">Cargando juegos...</div>';
@@ -17,10 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
         header: true,
         skipEmptyLines: true,
         complete: function(results) {
-            // Agregar un ID único a cada juego (usando el índice)
+            // Agregar un ID único a cada juego
             gamesData = results.data.map((game, index) => {
                 return { ...game, id: index.toString() };
             });
+            
             filteredGames = [...gamesData];
             renderGames();
             setupScrollListener();
@@ -30,9 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Renderizar juegos (por lotes)
     function renderGames() {
-        // Si es una nueva búsqueda, limpiar y empezar desde 0
         if (currentIndex === 0) {
             catalogContainer.innerHTML = '';
         }
@@ -42,11 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Determinar cuántos juegos cargar en este lote
         const endIndex = Math.min(currentIndex + batchSize, filteredGames.length);
         const gamesToLoad = filteredGames.slice(currentIndex, endIndex);
         
-        // Crear un fragmento de documento para mejor rendimiento
         const fragment = document.createDocumentFragment();
         
         gamesToLoad.forEach(game => {
@@ -55,28 +52,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         catalogContainer.appendChild(fragment);
-        
-        // Actualizar el índice
         currentIndex = endIndex;
-        
-        // Mostrar cuántos juegos se están viendo
         updateGamesCounter();
     }
     
-    // Crear tarjeta de juego
     function createGameCard(game) {
         const card = document.createElement('div');
         card.className = 'game-card';
         
-        // Obtener la ruta de la portada desde el CSV
-        const coverPath = game.Portada || '';
+        const coverPath = game.Portada || 'imagenes/placeholder.jpg';
         
         card.innerHTML = `
             <img src="${coverPath}" alt="${game.Nombre}" class="game-cover" loading="lazy" 
                  onerror="this.src='imagenes/placeholder.jpg'">
             <div class="game-info">
                 <h3 class="game-title">${game.Nombre}</h3>
-                <p class="game-size">${game.Tamaño}</p>
+                <p class="game-size">${game.Tamaño || 'Tamaño no disponible'}</p>
                 <button class="details-btn" data-id="${game.id}">Detalles</button>
             </div>
         `;
@@ -84,28 +75,23 @@ document.addEventListener('DOMContentLoaded', function() {
         return card;
     }
     
-    // Configurar listener de scroll
     function setupScrollListener() {
         window.addEventListener('scroll', () => {
-            // Verificar si estamos cerca del final y no estamos cargando
             if (!isLoading && window.innerHeight + window.scrollY >= document.body.offsetHeight - 500) {
-                // Si aún hay juegos por cargar
                 if (currentIndex < filteredGames.length) {
-                    isLoading = true; // Marcar como cargando
+                    isLoading = true;
                     showLoadingIndicator();
                     
-                    // Cargar más juegos después de un pequeño retraso
                     setTimeout(() => {
                         renderGames();
                         hideLoadingIndicator();
-                        isLoading = false; // Marcar como cargado
+                        isLoading = false;
                     }, 500);
                 }
             }
         });
     }
     
-    // Mostrar indicador de carga
     function showLoadingIndicator() {
         let loadingIndicator = document.getElementById('loadingIndicator');
         
@@ -120,7 +106,6 @@ document.addEventListener('DOMContentLoaded', function() {
         loadingIndicator.style.display = 'block';
     }
     
-    // Ocultar indicador de carga
     function hideLoadingIndicator() {
         const loadingIndicator = document.getElementById('loadingIndicator');
         if (loadingIndicator) {
@@ -128,7 +113,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Actualizar contador de juegos
     function updateGamesCounter() {
         let counter = document.getElementById('gamesCounter');
         
@@ -142,23 +126,19 @@ document.addEventListener('DOMContentLoaded', function() {
         counter.textContent = `Mostrando ${currentIndex} de ${filteredGames.length} juegos`;
     }
     
-    // Filtrar juegos - MODIFICADO PARA BUSCAR EN CUALQUIER PARTE DEL NOMBRE
     function filterGames() {
         const searchTerm = searchInput.value.toLowerCase();
         const platform = platformSelect.value;
         
-        // Resetear el índice cuando se filtra
         currentIndex = 0;
         
         filteredGames = gamesData.filter(game => {
-            // Buscar en cualquier parte del nombre
             const matchesSearch = searchTerm === '' || 
                                  game.Nombre.toLowerCase().includes(searchTerm);
             const matchesPlatform = platform === 'all' || game.Plataforma === platform;
             return matchesSearch && matchesPlatform;
         });
         
-        // Volver a renderizar
         catalogContainer.innerHTML = '';
         renderGames();
     }
@@ -190,14 +170,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Observar todas las imágenes que se agreguen dinámicamente
     const catalogContainer = document.getElementById('gameCatalog');
     const config = { childList: true, subtree: true };
     
     const mutationObserver = new MutationObserver((mutations) => {
         mutations.forEach((mutation) => {
             mutation.addedNodes.forEach((node) => {
-                if (node.nodeType === 1) { // Es un elemento
+                if (node.nodeType === 1) {
                     const images = node.querySelectorAll('img.game-cover');
                     images.forEach(img => observer.observe(img));
                 }
