@@ -2,10 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let gamesData = [];
     let filteredGames = [];
     let currentIndex = 0;
-    const batchSize = 12; // Cargar 50 juegos a la vez
+    const batchSize = 12; // Cargar 12 juegos a la vez
     const catalogContainer = document.getElementById('gameCatalog');
     const searchInput = document.getElementById('searchInput');
     const platformSelect = document.getElementById('platformSelect');
+    let isLoading = false; // Variable para controlar el estado de carga
     
     // Mostrar indicador de carga
     catalogContainer.innerHTML = '<div class="loading">Cargando juegos...</div>';
@@ -71,7 +72,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const coverPath = game.Portada || '';
         
         card.innerHTML = `
-            <img src="${coverPath}" alt="${game.Nombre}" class="game-cover" loading="lazy">
+            <img src="${coverPath}" alt="${game.Nombre}" class="game-cover" loading="lazy" 
+                 onerror="this.src='imagenes/placeholder.jpg'">
             <div class="game-info">
                 <h3 class="game-title">${game.Nombre}</h3>
                 <p class="game-size">${game.Tamaño}</p>
@@ -85,17 +87,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // Configurar listener de scroll
     function setupScrollListener() {
         window.addEventListener('scroll', () => {
-            // Verificar si estamos cerca del final de la página
-            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 500) {
+            // Verificar si estamos cerca del final y no estamos cargando
+            if (!isLoading && window.innerHeight + window.scrollY >= document.body.offsetHeight - 500) {
                 // Si aún hay juegos por cargar
                 if (currentIndex < filteredGames.length) {
-                    // Mostrar indicador de carga
+                    isLoading = true; // Marcar como cargando
                     showLoadingIndicator();
                     
                     // Cargar más juegos después de un pequeño retraso
                     setTimeout(() => {
                         renderGames();
                         hideLoadingIndicator();
+                        isLoading = false; // Marcar como cargado
                     }, 500);
                 }
             }
@@ -111,15 +114,10 @@ document.addEventListener('DOMContentLoaded', function() {
             loadingIndicator.id = 'loadingIndicator';
             loadingIndicator.className = 'loading-indicator';
             loadingIndicator.innerHTML = '<div class="loading-spinner"></div><p>Cargando más juegos...</p>';
-            document.body.appendChild(loadingIndicator);
+            catalogContainer.appendChild(loadingIndicator);
         }
         
         loadingIndicator.style.display = 'block';
-        loadingIndicator.style.position = 'fixed';
-        loadingIndicator.style.bottom = '20px';
-        loadingIndicator.style.left = '50%';
-        loadingIndicator.style.transform = 'translateX(-50%)';
-        loadingIndicator.style.zIndex = '1000';
     }
     
     // Ocultar indicador de carga
@@ -144,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
         counter.textContent = `Mostrando ${currentIndex} de ${filteredGames.length} juegos`;
     }
     
-    // Filtrar juegos - MODIFICADO PARA BUSCAR POR LETRA INICIAL
+    // Filtrar juegos - MODIFICADO PARA BUSCAR EN CUALQUIER PARTE DEL NOMBRE
     function filterGames() {
         const searchTerm = searchInput.value.toLowerCase();
         const platform = platformSelect.value;
@@ -153,9 +151,9 @@ document.addEventListener('DOMContentLoaded', function() {
         currentIndex = 0;
         
         filteredGames = gamesData.filter(game => {
-            // Buscar por el inicio del nombre (letra inicial)
+            // Buscar en cualquier parte del nombre
             const matchesSearch = searchTerm === '' || 
-                                 game.Nombre.toLowerCase().startsWith(searchTerm);
+                                 game.Nombre.toLowerCase().includes(searchTerm);
             const matchesPlatform = platform === 'all' || game.Plataforma === platform;
             return matchesSearch && matchesPlatform;
         });

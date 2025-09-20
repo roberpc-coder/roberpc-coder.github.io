@@ -120,13 +120,19 @@
                 width: 100%;
                 height: auto;
             }
+            
+            .details-title {
+                font-size: 24px;
+            }
+            
+            .details-meta {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
     </style>
 </head>
 <body>
-    <button class="back-btn" onclick="window.history.back()">← Volver al catálogo</button>
-    
-    <div class="details-container" id="gameDetails">
+    <div id="gameDetails">
         <div class="loading">Cargando detalles del juego...</div>
     </div>
 
@@ -172,33 +178,37 @@
                 const año = game.Año || 'No disponible';
                 
                 detailsContainer.innerHTML = `
-                    <div class="details-header">
-                        <img src="${game.Portada}" alt="${game.Nombre}" class="details-cover" loading="lazy">
-                        <div class="details-info">
-                            <h1 class="details-title">${game.Nombre}</h1>
-                            <div class="details-meta">
-                                <div class="meta-item">
-                                    <div class="meta-label">Plataforma</div>
-                                    <div class="meta-value">${game.Plataforma}</div>
-                                </div>
-                                <div class="meta-item">
-                                    <div class="meta-label">Año</div>
-                                    <div class="meta-value">${año}</div>
-                                </div>
-                                <div class="meta-item">
-                                    <div class="meta-label">Género</div>
-                                    <div class="meta-value">${genero}</div>
-                                </div>
-								<div class="meta-item">
-                                    <div class="meta-label">Tamaño</div>
-                                    <div class="meta-value">${game.Tamaño}</div>
+                    <button class="back-btn" onclick="window.history.back()">← Volver al catálogo</button>
+                    <div class="details-container">
+                        <div class="details-header">
+                            <img src="${game.Portada}" alt="${game.Nombre}" class="details-cover" loading="lazy"
+                                 onerror="this.src='imagenes/placeholder.jpg'">
+                            <div class="details-info">
+                                <h1 class="details-title">${game.Nombre}</h1>
+                                <div class="details-meta">
+                                    <div class="meta-item">
+                                        <div class="meta-label">Plataforma</div>
+                                        <div class="meta-value">${game.Plataforma}</div>
+                                    </div>
+                                    <div class="meta-item">
+                                        <div class="meta-label">Año</div>
+                                        <div class="meta-value">${año}</div>
+                                    </div>
+                                    <div class="meta-item">
+                                        <div class="meta-label">Género</div>
+                                        <div class="meta-value">${genero}</div>
+                                    </div>
+                                    <div class="meta-item">
+                                        <div class="meta-label">Tamaño</div>
+                                        <div class="meta-value">${game.Tamaño}</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="details-description">
-                        <h2>Requisitos</h2>
-                        <p>${requisitos}</p>
+                        <div class="details-description">
+                            <h2>Requisitos</h2>
+                            <p>${requisitos}</p>
+                        </div>
                     </div>
                 `;
             }

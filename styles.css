@@ -228,6 +228,11 @@ body {
   .game-cover {
     aspect-ratio: 5 / 7;
   }
+  
+  /* Reducir tamaño del título en móviles */
+  .game-title {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -263,9 +268,9 @@ body {
 /* ESTILOS NUEVOS PARA EL CARGA POR LOTES */
 /* ==================================== */
 
-/* Estilos para el contador de juegos - OCULTO POR DEFECTO */
+/* Estilos para el contador de juegos - VISIBLE AHORA */
 .games-counter {
-  display: none; /* Cambia a 'block' si quieres mostrarlo */
+  display: block; /* Cambiado de 'none' a 'block' */
   text-align: center;
   margin: 20px 0;
   padding: 10px;
@@ -285,6 +290,9 @@ body {
   border-radius: 30px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  grid-column: 1 / -1; /* Ocupa todo el ancho de la cuadrícula */
+  justify-self: center;
+  margin: 20px 0;
 }
 
 .loading-spinner {
