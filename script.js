@@ -40,7 +40,34 @@ document.addEventListener('DOMContentLoaded', function() {
             catalogContainer.innerHTML = '<div class="error">No se encontraron juegos.</div>';
             return;
         }
-        
+        // En script.js
+document.addEventListener('DOMContentLoaded', function() {
+    // ... código existente ...
+    
+    // Toggle de tema
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    const themeIcon = themeToggle.querySelector('i');
+    
+    // Verificar si hay un tema guardado
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        body.classList.toggle('light-mode', savedTheme === 'light');
+        updateThemeIcon();
+    }
+    
+    themeToggle.addEventListener('click', function() {
+        body.classList.toggle('light-mode');
+        const isLightMode = body.classList.contains('light-mode');
+        localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
+        updateThemeIcon();
+    });
+    
+    function updateThemeIcon() {
+        const isLightMode = body.classList.contains('light-mode');
+        themeIcon.className = isLightMode ? 'fas fa-sun' : 'fas fa-moon';
+    }
+});
         const endIndex = Math.min(currentIndex + batchSize, filteredGames.length);
         const gamesToLoad = filteredGames.slice(currentIndex, endIndex);
         
