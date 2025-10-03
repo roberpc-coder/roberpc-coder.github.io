@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
             estrenosData = gamesData.filter(game => game.Estreno === 'true');
             
             // Si hay más de 8 estrenos, tomar solo los primeros 8
-            if (estrenosData.length > 8) {
-                estrenosData = estrenosData.slice(0, 8);
+            if (estrenosData.length > 12) {
+                estrenosData = estrenosData.slice(0, 12);
             }
             
             renderEstrenos();
