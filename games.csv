@@ -474,6 +474,17 @@ Battlefield 4,24.8 Gb,PC,portadas/Battlefield 4.webp,Acción,"•Sistemas Operat
 •Tarjetas Gráficas: AMD: Radeon HD 3870 | NVIDIA: GeForce 8800 GT
 •Memoria Gráfica: 512 Megas",2020,
 Battlefield 4 Zolemu,40 GB,PC Online,portadas/Battlefield 4 Zolemu.webp,Accion Shooter,,2020,
+Battlefield 6,62.8 Gb,PC Online,portadas/Battlefield 6.webp,Acción Primera Persona,"•SO: Windows 10
+•Procesador (AMD): AMD Ryzen 5 2600
+•Procesador (Intel): Intel Core i5-8400
+•Memoria: 16 GB
+•Tarjeta gráfica (AMD): AMD Radeon RX 5600 XT 6 GB
+•Tarjeta gráfica (Nvidia): Nvidia RTX 2060
+•Tarjeta gráfica (Intel): Intel Arc A380
+•Direct X: DX12
+•Requisitos de conexión online: Sí
+•Espacio en el disco duro: HDD - 55 GiB
+•Notas adicionales: TPM 2.0 habilitado, ARRANQUE SEGURO de la UEFI habilitado, HVCI habilitada, VBS habilitada",2025,true
 Battlefield Bad Company 2,7.1 Gb,PC,portadas/Battlefield Bad Company 2.webp,"Shooter, Strategy, Adventure","""•Sistema Operativo: 
 •Sistema Operativo: Windows 10 or above
 •Procesador: 
@@ -1869,7 +1880,11 @@ Fates Ties,2.3 Gb,PC,portadas/Fates Ties.webp,"Casual, Rol, Simuladores","•Sis
 •Memoria: 
 •4 GB de RAM
 •GeForce GTX 560 Ti (1GB), Radeon HD 7750 (1GB)",2024,
-FC 26,55 Gb,PC,portadas/FC 26.webp,Deportes,,2025,true
+EA SPORTS FC 26,55 Gb,PC,portadas/EA SPORTS FC 26.webp,Deportes,"•SO: Windows 10/11 - 64-Bit (Latest Update)
+•Procesador: AMD Ryzen 5 1600 or Intel Core i5 6600k
+•Memoria: 8 GB de RAM
+•Gráficos: AMD RX 570 or Nvidia GTX 1050 Ti
+•DirectX: Versión 12",2025,true
 FERNBUS SIMULATOR,4.6 Gb,PC,portadas/FERNBUS SIMULATOR.webp,"Casual, Simuladores","•Sistema Operativo: Windows 10, 11
 •Procesador: Intel Core i5 Processor or similar with at least 2.6 GHz
 •Memoria: 
@@ -5197,7 +5212,7 @@ Trials of Mana,10.7 Gb,Nintendo Switch,portadas/Trials of Mana.webp,"""Rol, Aven
 Trials Rising,27.5 Gb,PC,portadas/Trials Rising.webp,Carreras,"•Sistema Operativo: Windows 7
 •Procesador: Intel Core i5-2400, AMD FX-4100
 •Memoria: 4 Gigas de RAM
-•Gráficos: NVIDIA GeForce GTX 650 Ti o AMD Radeon HD 7770",2025,true
+•Gráficos: NVIDIA GeForce GTX 650 Ti o AMD Radeon HD 7770",2025,
 Trine ,0.5 Gb,PC,portadas/Trine.webp,"Platform, Puzzle, Adventure, Indie","•Sistema Operativo: Windows 10/11
 •Procesador: 
 •Intel Core i7-2600K 3.40GHz or Ryzen 5 1600
