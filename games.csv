@@ -83,7 +83,7 @@ Afterimage,6.5 Gb,PC,portadas/Afterimage.webp,"Acción, Aventura, Indie","•Sis
 Agatha Christie Death On The Nile,12.0 Gb,PC,portadas/Agatha Christie Death On The Nile.webp,Aventura,"•Sistema Operativo : Windows 7 SP1 / Windows 8.1 / Windows 10 (64bit versions only) Micro 
 •Procesador : Intel Core i3 
 •Memoria RAM : 8 GB 
-•Tarjeta de Vídeo : Geforce 640",2025,true
+•Tarjeta de Vídeo : Geforce 640",2025,
 Age of Empires II Definitive Edition,18.4 Gb,PC,portadas/Age of Empires II Definitive Edition.webp,Estrategia,"•Sistema Operativo: Windows 10 64bit
 •Intel Core 2 Duo or AMD Athlon 64x2 5600+
 •4 GB de RAM
@@ -121,8 +121,7 @@ Akimbot,8.1 Gb,PC,portadas/Akimbot.webp,"Acción, Aventura","•Sistema Operativ
 Alaloth Champions of The Four Kingdoms Skylight,7.8 Gb,PC,portadas/Alaloth Champions of The Four Kingdoms Skylight.webp,"""Rol de acción, Isométricos, Hack and Slash""","•Sistema Operativo: Windows 7
 •Core i3 2100 / AMD Phenom X2 550
 •2 GB de RAM
-•NVIDIA GTX 770 / AMD Radeon 7970
-",2024,
+•NVIDIA GTX 770 / AMD Radeon 7970",2024,
 Alan Wake,7.5 Gb,PC,portadas/Alan Wake.webp,"Acción, Aventura","•Sistema Operativo: Windows XP SP2
 •Procesador: Dual Core Intel a 2 GHz o AMD a 2.8 GHz
 •Memoria: 2 Gigas de RAM
@@ -152,6 +151,13 @@ Alice Madness Returns,7.5 Gb,PC,portadas/Alice Madness Returns.webp,"Acción, Av
 •Disco duro: 8,5 Gigas de espacio libre en disco duro
 •Tarjeta de video: NVIDIA GeForce 7600/ATI Radeon X1650 con 256 Megas o más
 •Tarjeta de sonido: compatible con DirectX 9.0c",2011,
+Alien Rogue Incursion Evolved Edition,19.8 Gb,PC,portadas/Alien Rogue Incursion Evolved Edition.webp,Acción,"•Sistema Operativo: Windows 10 | Windows 11
+•Procesador: Intel Core i5-8600 | AMD Ryzen 5 3600
+•Memoria: 16 Gigas de RAM
+•Gráficos: NVIDIA GeForce GTX 1060 6Gigas | AMD Radeon RX 580 8Gigas
+•DirectX: Versión 12
+•Almacenamiento: 30 Gigas de espacio disponible
+•Notas adicionales: SSD Requerido ",2025,
 Aliens Fireteam Elite Pathogen,19.3 Gb,PC,portadas/Aliens Fireteam Elite Pathogen.webp,"Acción, Rol","•Sistema Operativo: Windows 10 de 64 bits
 •Procesador: AMD Athlon X4 950 / Intel i5-2500K
 •Memoria: 8 Gigas de RAM
@@ -173,6 +179,11 @@ Aluna Sentinel of The Shards,6.1 Gb,PC,portadas/Aluna Sentinel of The Shards.web
 •DirectX: Versión 12
 •Almacenamiento: 50 Gigas de espacio disponible",2021,
 Ambulance Life A Paramedic Simulator 3,58.9 Gb,PC,portadas/Ambulance Life A Paramedic Simulator 3.webp,,,2025,
+American Fugitive,0.9 Gb,PC,portadas/American Fugitive.webp,Acción Aventura Indie,"Sistema Operativo: Windows 7, 8, 8.1, 10 x64
+Procesador: Intel Core2 Quad Q9550 (4 * 2830) / AMD Athlon X4 740 (4 * 3200) o equivalente
+Memoria: 4 Gigas de RAM
+Gráficos: GeForce GT 460 (1024 Megas) / Radeon 7770 (1024 Megas)
+Almacenamiento: 2 Gigas de espacio disponible",2020,
 American Truck Simulator,11.7 Gb,PC,portadas/American Truck Simulator.webp,"Indie, Simuladores","•Sistema Operativo: Windows 7 / 8.1 / 10 / 64 Bits
 •Procesador: Dual core CPU 2.4 GHz
 •Memoria RAM: 4 Gigas de RAM
@@ -183,6 +194,12 @@ Amerzone The Explorers Legacy,13.1 Gb,PC,portadas/Amerzone The Explorers Legacy.
 •8 GB de RAM
 •NVIDIA GeForce GTX 1080 Ti / AMD Radeon RX580 8GB
 ",2025,
+Among Us,0.5 Gb,PC Online,portadas/Among Us.webp,Multijugador Cooperativo en línea,"Requiere un procesador y un sistema operativo de 64 bits
+Sistema Operativo: Windows 7, 8, 10
+Procesador: Intel Pentium E2180 @ 2.00GHz / AMD Turion 64 X2 Mobile TL-64
+Memoria: 1 Gigas de RAM
+Gráficos: GeForce 7600 GT / Radeon HD 7310G
+DirectX: Versión 10 ",2018,
 Ancestors Legacy Slavs,21.5 Gb,PC,portadas/Ancestors Legacy Slavs.webp,"""Violentos, Sangriento""",,2025,
 Ancestors The Humankind Odyssey,8.8 Gb,PC,portadas/Ancestors The Humankind Odyssey.webp,"Acción, Aventura, Indie, Rol","•Sistema Operativo: Windows 7 Sp1 64-bit
 •Intel Core i5-2500K or AMD Phenom II X6 1100T
@@ -302,13 +319,13 @@ Assassin’s Creed Mirage,28.9 Gb,PC,portadas/Assassin’s Creed Mirage.webp,"Ac
 •Tarjeta gráfica AMD Radeon RX 6900 XT (16 GB) o NVIDIA GeForce RTX 3080 (10 GB)
 •Disco duro 40 GB de espacio disponible (es necesario SSD)
 •DirectX DirectX 12.",2024,
-Assetto Corsa,13.2 Gb,PC,portadas/Assetto Corsa.webp,"Indie, Carreras, Simuladores, Deportes","•Sistema operativo: Windows Vista, 7,8,8.1
+Assetto Corsa,8.2 Gb,PC,portadas/Assetto Corsa.webp,"Indie, Carreras, Simuladores, Deportes","•Sistema operativo: Windows Vista, 7,8,8.1
 •Procesador: AMD Athlon X2 2.8 GHz, Intel Core 2 Duo 2.4 GHZ
 •Memoria: 2 Gigas de RAM
 •Gráficos: DirectX 10.1 (AMD Radeon HD 6450, Nvidia GeForce GT 460)
 •DirectX: Versión 11
 •Red: Conexión a internet de banda ancha
-•Disco Duro: 15 Gigas de espacio disponible",2014,
+•Disco Duro: 15 Gigas de espacio disponible",2017,
 Assetto Corsa Competizione,10.8 Gb,PC,portadas/Assetto Corsa Competizione.webp,"Carreras, Simuladores, Deportes","•Requiere un procesador y un sistema operativo de 64 bits
 •Sistema Operativo: Windows 7 64-bit Service Pack 1
 •Procesador: Intel Core i5-4460 o AMD FX-8120
@@ -316,6 +333,11 @@ Assetto Corsa Competizione,10.8 Gb,PC,portadas/Assetto Corsa Competizione.webp,"
 •Gráficos: GeForce GTX 460 2 Gigas, Radeon HD 7770
 •DirectX: Versión 11
 •Almacenamiento: 50 Gigas de espacio disponible",2019,
+Asterix & Obelix Mission Babylon,1.6 Gb,PC,portadas/Asterix & Obelix Mission Babylon.webp,"Acción, Aventura","•Sistema Operativo: Windows 10
+•Procesador: Intel i5 de 5th generación o equivalente
+•Memoria: 8 Gigas de RAM
+•Gráficos: GTX 1060 o equivalente
+•Almacenamiento: 5 Gigas de espacio disponible",2025,
 Asterix-Obelix Slap Them All 2,2.1 Gb,PC,portadas/Asterix-Obelix Slap Them All 2.webp,"Acción, Aventura, Simuladores, Deportes","•Sistema Operativo: Windows 10
 •Procesador: Intel Core i5 2310 @ 3 Ghz
 •Memoria: 8 Gigas de RAM
@@ -398,20 +420,16 @@ Banishers Ghosts Of New Eden,53.7 Gb,PC,portadas/Banishers Ghosts Of New Eden.we
 •Intel Core i3-8300 / AMD Ryzen 3 2200G
 •8 GB de RAM
 •4 GB VRAM, Nvidia GeForce GTX 1050 Ti / AMD Radeon RX 580
-•Almacenamiento: 52 GB de espacio disponible
-",2024,
+•Almacenamiento: 52 GB de espacio disponible",2024,
 barbie project friendship,2.7 Gb,PC,portadas/barbie project friendship.webp,"Aventura, Casual, Simuladores","•Sistema Operativo: Windows 10 64-Bit
 •AMD Ryzen 3 1200 / Intel Core i3-7100
 •8 GB de RAM
-•AMD Radeon RX 550 / Nvidia GTX 750
-
-",2024,
+•AMD Radeon RX 550 / Nvidia GTX 750",2024,
 Barotrauma,1.3 Gb,PC,portadas/Barotrauma.webp,"Acción, Indie, Simuladores, Estrategia","•Sistema Operativo: Windows 7/8.1/10 (64-bit versions)
 •Dual Core 2.4 GHz
 •4 GB de RAM
 •Sistema Operativo: 
-•Memoria: 2 GB memory (dedicated VRAM or shared RAM), Shader Model 2.0+
-",2023,
+•Memoria: 2 GB memory (dedicated VRAM or shared RAM), Shader Model 2.0+",2023,
 Batman Arkham Asylum Game Of The Year Edition,5.5 Gb,PC,portadas/Batman Arkham Asylum Game Of The Year Edition.webp,"Acción, Aventura","•Sistema Operativo: Vista / XP  
 •Procesador: Intel a 3 GHz o cualquier AMD Dual Core
 •Memoria: 1 GB de RAM (XP) / 2 GB de RAM 
@@ -441,8 +459,7 @@ Battlefield 1,21.8 Gb,PC,portadas/Battlefield 1.webp,"Acción, Multijugador masi
 Battlefield 2 Complete Collection,3.5 Gb,PC,portadas/Battlefield 2 Complete Collection.webp,Shooter,"•Sistema Operativo: Windows 7 o posterior
 •Intel o AMD de doble núcleo a 2,8 GHz
 •4 GB de RAM
-•NVIDIA GeForce 8600/9600GT, ATI/AMD Radeon HD2600/3600
-",2007,
+•NVIDIA GeForce 8600/9600GT, ATI/AMD Radeon HD2600/3600",2007,
 Battlefield 3,35.5 Gb,PC,portadas/Battlefield 3.webp,Acción,"•Sistema Operativo: Windows 7
 •Procesador: Intel Core Duo 2 2.4 GHz o Equivalente
 •Memoria RAM: XP 2 GB – Vista / Win7 3 GB
@@ -536,7 +553,14 @@ Blasphemous 2,2.9 Gb,PC,portadas/Blasphemous 2.webp,"Acción, Aventura, Indie","
 •4 GB de RAM
 •Gráficos: NVIDIA GeForce GT 520, 1 GB or AMD Radeon HD 7470, 1 GB or Intel HD Graphics 4400
 ",2023,
+Blood Of Mehran,15.5 Gb,PC,portadas/Blood Of Mehran.webp,Acción Aventura Rol,"Sistema Operativo: Windows 7
+Procesador: Intel Core i5 6600 | AMD Ryzen 5 3400G
+Memoria: 8 Gigas de RAM
+Gráficos: Nvidia GeForce GTX 780 Ti (3 Gigas) | AMD Radeon R9 290 (4 Gigas)
+DirectX: Versión 11
+Almacenamiento: 36 Gigas de espacio disponible ",2025,
 blood omen 2 legacy of kain,1.2 Gb,PC,portadas/blood omen 2 legacy of kain.webp,Acción,,2013,
+Bloodborne The Hold Hunters,58.7 Gb,PC Emulados,portadas/Bloodborne The Hold Hunters.webp,,,,
 BLOODSTRIKE,12.2 Gb,PC Online,portadas/BLOODSTRIKE.webp,"Acción, Aventura, Multijugador masivo, Estrategia, Free to Play",,2025,
 Bloody Ink,10.9 Gb,PC,portadas/Bloody Ink.webp,"Acción, Aventura, Indie, Estrategia","•Sistema Operativo: Windows 7, 8 y 10
 •Procesador: Intel® Core i3 o AMD Ryzen 3
@@ -563,6 +587,10 @@ Borderlands 2,11.0 Gb,PC,portadas/Borderlands 2.webp,,,,
 Borderlands 3 Designers Cut,118.8 Gb,PC,portadas/Borderlands 3 Designers Cut.webp,Shooter,,2020,
 Borderlands Edición Juego del año,13.7 Gb,Nintendo Switch,portadas/Borderlands Edición Juego del año.webp,"""Violentos, Sangriento""",,2025,
 Borderlands Game of The Year Enhanced,18.8 Gb,PC,portadas/Borderlands Game of The Year Enhanced.webp,"Acción, Rol",,2023,
+Bounty Star,4.3 Gb,PC,portadas/Bounty Star.webp,"Acción, Aventura","•Sistema Operativo: Windows 10
+•Procesador: Intel Core i5-3470 o AMD Ryzen 3 1200
+•Memoria: 12 Gigas de RAM
+•Gráficos: NVIDIA GeForce GTX 1650, 4Gigas o AMD Radeon R9 390, 4Gigas o Intel Arc A750, 8Gigas",2025,
 Bramble The Mountain King,7.4 Gb,PC,portadas/Bramble The Mountain King.webp,"Aventura, Indie","•Sistema Operativo: Windows 10
 •Procesador: Intel Core i5-2300 | AMD FX-4350
 •Memoria: 4 Gigas de RAM
@@ -970,7 +998,7 @@ Croc Legend of the Gobbos Remastered,2.1 Gb,PC,portadas/Croc Legend of the Gobbo
 •Memoria: 
 •16 GB de RAM
 •Almacenamiento: 35 GB de espacio disponible""",1997,
-Cronos The New Dawn Deluxe Edition,22.4 Gb,PC,portadas/Cronos The New Dawn Deluxe Edition.webp,Acción,,2025,true
+Cronos The New Dawn Deluxe Edition,22.4 Gb,PC,portadas/Cronos The New Dawn Deluxe Edition.webp,Acción,,2025,
 Crossfire Legion,9.0 Gb,PC,portadas/Crossfire Legion.webp,"""Estrategia, Históricos, Gran estrategia""","•Sistema Operativo: Microsoft® Windows Vista® / XP® / Windows® 7
 •2.3 GHz con SSE2
 •Sistema Operativo: 1 GB de RAM (XP), 2 GB de RAM (Vista® / Windows® 7)
@@ -1088,7 +1116,7 @@ Dave The Diver ,2.2 Gb,PC,portadas/Dave The Diver.webp,"Aventura, Casual, Rol, S
 •Gráficos: NVIDIA Geforce GTS 450 / AMD Radeon HD 5570
 •DirectX: Versión 11
 •Almacenamiento: 10 Gigas de espacio disponible",2023,
-DAVYxJONES,17.2 Gb,PC,portadas/DAVYxJONES.webp,"Acción, Aventura, Acceso anticipado",,2025,true
+DAVYxJONES,17.2 Gb,PC,portadas/DAVYxJONES.webp,"Acción, Aventura, Acceso anticipado",,2025,
 Daydream Forgotten Sorrow,3.9 Gb,PC,portadas/Daydream Forgotten Sorrow.webp,"""Buena trama, Aventura, Adorables""","""•Sistema Operativo: Requiere un procesador y un sistema operativo de 64 bits
 •Sistema Operativo: 
 •Sistema Operativo: Windows 10, 64 bit
@@ -1287,6 +1315,12 @@ Distant Bloom,1.5 Gb,PC,portadas/Distant Bloom.webp,"Aventura, Casual, Indie","�
 •8 GB de RAM
 •Gráficos: Radeon HD6870 -OR- GeForce GTX 295 (Does not support Intel Integrated Graphics Cards)
 •Almacenamiento: 2 GB de espacio disponible""",2024,
+Divinity Original Sin 2 Definitive Edition,53 Gb,PC,portadas/Divinity Original Sin 2 Definitive Edition.webp,Aventura Rol Estrategia,"Sistema Operativo: Windows 7 SP1 64-bit / Windows 8.1 64-bit / Windows 10 64-bit
+Procesador: Intel Core i5 o equivalente
+Memoria: 4 Gigas de RAM
+Gráficos: NVIDIA GeForce GTX 550 or ATI Radeon HD 6XXX o superior
+DirectX: Versión 11
+Almacenamiento: 35 Gigas de espacio disponible",2017,
 Divinity Original Sin II,12.0 Gb,Nintendo Switch,portadas/Divinity Original Sin II.webp,"""Rol, Estrategia, Aventura""",,2018,
 Don't Starve,1.8 Gb,PC,portadas/Don't Starve.webp,"Aventura, Indie, Simuladores","•Sistema Operativo: Windows® 10 (64-bit)
 •Procesador: 
@@ -1319,6 +1353,12 @@ Doomblade,2.3 Gb,PC,portadas/Doomblade.webp,"Acción, Aventura, Indie","•Siste
 •Memoria: 8 Gigas de RAM
 •Gráficos: GeForce GTX 1050 or AMD Radeon RX Vega 56 4 GB
 •Almacenamiento: 12 Gigas de espacio disponible",2023,
+Dora Rescate en el Bosque Tropical,2.0 Gb,PC,portadas/Dora Rescate en el Bosque Tropical.webp,"Acción, Aventura","•Sistema Operativo: Windows 10 64-Bit
+•Procesador: AMD Ryzen 5 2500X | Intel Core i5-8400
+•Memoria: 8 Gigas de RAM
+•Gráficos: AMD Radeon R9 280 | Nvidia GTX 960
+•DirectX: Versión 11
+•Almacenamiento: 16 Gigas de espacio disponible",2025,
 dota 2,56.1 Gb,PC Online,portadas/dota 2.webp,"Acción, Estrategia, Free to Play","•Sistema Operativo: Windows 7 o posterior
 •Intel o AMD de doble núcleo a 2,8 GHz
 •4 GB de RAM
@@ -1339,13 +1379,16 @@ Dragon Age Origins,7.7 Gb,PC,portadas/Dragon Age Origins.webp,Rol,"•Sistemas O
 •DirectX: Versión 9
 •Disco Duro: 20 Gigas de espacio Libre",2010,
 Dragon Age The Veilguard,80.6 Gb,PC,portadas/Dragon Age The Veilguard.webp,"Role-playing (RPG), Strategy, Adventure",,2024,
+Dragon Ball Fighter Z Ultimate Edition,5.5 Gb,PC,portadas/Dragon Ball Fighter Z Ultimate Edition.webp,Acción,"•Sistemas Operativos: Windows 7/8/10 (64-bit)
+•Procesador: AMD FX-4350, 4.2 GHz / Intel Core i5-3470, 3.20 GHz
+•Memoria: 4 Gigas de RAM
+•Gráficos: Radeon HD 6870, 1 Giga / GeForce GTX 650 Ti, 1 Giga",2018,
 Dragon Ball Sparking ZERO,24.6 Gb,PC,portadas/Dragon Ball Sparking ZERO.webp,Acción,"•Sistema Operativo: Windows 10
 •Procesador: 
 •Intel Core i5-9600K / AMD Ryzen 5 2600
 •Memoria: 
 •8 GB de RAM
-•Nvidia GeForce GTX 980 / AMD Radeon RX 590 / Intel Arc A750
-",2024,
+•Nvidia GeForce GTX 980 / AMD Radeon RX 590 / Intel Arc A750",2024,
 Dragon Ball Xenoverse 2 Hero of Justice,10.5 Gb,Nintendo Switch,portadas/Dragon Ball Xenoverse 2 Hero of Justice.webp,"""Lucha, Rol, Simulator""",,2016,
 Dragon Ball Xenoverse 2 Hero of Justice,24.2 Gb,PC,portadas/Dragon Ball Xenoverse 2 Hero of Justice.webp,"Acción, Aventura, Casual, Multijugador masivo",,2023,
 Dragon Ball Z Kakarot,40.1 Gb,PC,portadas/Dragon Ball Z Kakarot.webp,"Acción, Rol","•Requiere un procesador y un sistema operativo de 64 bits
@@ -1458,7 +1501,7 @@ Dying Light The Beast,41.5 Gb,PC,portadas/Dying Light The Beast.webp,"""Rol, Ave
 •Intel i5-13400F / AMD Ryzen 7 5800X
 •Memoria: 
 •16 GB de RAM
-•NVIDIA GeForce 1060 / AMD Radeon 5500 XT / Intel ARC A750",2025,true
+•NVIDIA GeForce 1060 / AMD Radeon 5500 XT / Intel ARC A750",2025,
 Dynasty Warriors Origins,45.3 Gb,PC,portadas/Dynasty Warriors Origins.webp,"Acción, Rol, Estrategia","•Sistema Operativo: Windows® 10/11 64-bit
 •Procesador: 
 •Intel Core i5-8400 or higher, AMD Ryzen 5 2600 or higher
@@ -1553,11 +1596,24 @@ Ereban Shadow Legacy,3.2 Gb,PC,portadas/Ereban Shadow Legacy.webp,"Acción, Aven
 •Gráficos: NVIDIA GeForce GTX 960
 •DirectX: Versión 11
 •Almacenamiento: 15 Gigas de espacio disponible",2024,
+Escape from Duckov,0.6 Gb,PC,portadas/Escape from Duckov.webp,"Acción, Aventura, Indie, Rol","•Sistema Operativo: Windows 10
+•Procesador: intel Core i7-9700 | AMD Ryzen 5 5600
+•Memoria: 8 Gigas de RAM
+•Gráficos: NVIDIA GeForce GTX 1060 | AMD Radeon RX 6500 XT
+•DirectX: Versión 11
+•Almacenamiento: 3 Gigas de espacio disponible",2025,true
 Escape from Tarkov,7.9 Gb,PC,portadas/Escape from Tarkov.webp,"Acción, Multijugador masivo, Rol, Simuladores","•OS:Windows 7/8/10 (64 Bit)
 •CPU:dual-core processor 2.4 GHz (Intel Core 2 Duo, i3), 2.6 GHz (AMD Athlon, Phenom II)
 •RAM:8 GB
 •GPU:DX11 compatible graphics card with 1 GB memory
 •DX:DirectX 11",,
+escape simulator 2,13.4 Gb,PC,portadas/escape simulator 2.webp,"Aventura, Casual, Indie, Simuladores","•Requiere un procesador y un sistema operativo de 64 bits
+•Sistema Operativo: Windows 10 versión 21H1
+•Procesador: Soporte para el set de instrucciones SSE2
+•Memoria: 8 Gigas de RAM
+•Gráficos: Tarjeta con capacidad para DX11 + 4 Gigas de VRAM
+•DirectX: Versión 11
+•Almacenamiento: 20 Gigas de espacio disponible",2025,true
 Eternal Strands,7.5 Gb,PC,portadas/Eternal Strands.webp,"Acción, Aventura","•Sistema Operativo: 64-bit Windows 10 (version 2004 or newer)
 •Procesador: 
 •4 core CPU @ 2.5 GHz (AMD Ryzen 5, Intel core i3/i5)
@@ -1785,6 +1841,12 @@ Farming Simulator 25,18.6 Gb,PC,portadas/Farming Simulator 25.webp,Simuladores,"
 •8 GB de RAM
 •Gráficos: Nvidia GeForce GTX 1050Ti, AMD Radeon RX 470 graphics card or better (min 3GB VRAM, DX12 support)
 ",2024,
+Farthest Frontier,6.4 Gb,PC,portadas/Farthest Frontier.webp,"Indie, Simuladores, Estrategia","•Sistema Operativo: Windows 10 (64-bits)
+•Procesador: Intel Core i5 3470 @ 3.2 GHz / AMD FX 8120 @ 3.9 GHz o superior
+•Memoria: 8 Gigas de RAM
+•Gráficos: NVIDIA GeForce GTX 780 / AMD R9 290 con 3 GB de VRAM o superior
+•DirectX: Versión 11
+•Almacenamiento: 4 Gigas de espacio disponible",2025,
 Fatal Fury City Of The Wolves,30.4 Gb,PC,portadas/Fatal Fury City Of The Wolves.webp,Acción,"•Sistema Operativo: Windows 10
 •Procesador: 
 •Intel Core i5-7500 / AMD Ryzen 3 1200
@@ -1807,7 +1869,7 @@ Fates Ties,2.3 Gb,PC,portadas/Fates Ties.webp,"Casual, Rol, Simuladores","•Sis
 •Memoria: 
 •4 GB de RAM
 •GeForce GTX 560 Ti (1GB), Radeon HD 7750 (1GB)",2024,
-FC 26,55 Gb,PC Online,portadas/FC 26.webp,Deportes,,2025,true
+FC 26,55 Gb,PC,portadas/FC 26.webp,Deportes,,2025,true
 FERNBUS SIMULATOR,4.6 Gb,PC,portadas/FERNBUS SIMULATOR.webp,"Casual, Simuladores","•Sistema Operativo: Windows 10, 11
 •Procesador: Intel Core i5 Processor or similar with at least 2.6 GHz
 •Memoria: 
@@ -2047,6 +2109,11 @@ God of War,30.5 Gb,PC,portadas/God of War.webp,"Acción, Aventura, Rol","•Requ
 •Gráficos: NVIDIA GTX 960 (4 Gigas) o AMD R9 290X (4 Gigas)
 •DirectX: Versión 11
 •Almacenamiento: 70 Gigas de espacio disponible",2022,
+God of War Chains of Olympus,1.3 Gb,PC,portadas/God of War Chains of Olympus.webp,Acción,"•Sistema Operativo Windows XP.
+•DirectX9.
+•Procesador dual core 2.0 GHz.
+•Placa de video Geforce 8600 Gt
+•1GB de memoria RAM.",2008,
 God of War Collection,18.2 Gb,PC,portadas/God of War Collection.webp,"Hack and slash/Beat 'em up, Adventure","•Sistemas operativos soportados: Windows XP, Windows Vista, Windows 7, Windows 8.1 x64
 •Procesador: Procesador Intel Pentium D a 2,6 GHz o AMD Athlon 64 X2 3800
 •Memoria RAM: 1 Gigas
@@ -2358,7 +2425,7 @@ Hollow Knight Silksong,2.2 Gb,PC,portadas/Hollow Knight Silksong.webp,"Acción, 
 •Intel Core i3-3240, AMD FX-4300
 •Memoria: 
 •4 GB de RAM
-•GeForce GTX 560 Ti (1GB), Radeon HD 7750 (1GB)",2025,true
+•GeForce GTX 560 Ti (1GB), Radeon HD 7750 (1GB)",2025,
 Hollowbody,7.3 Gb,PC,portadas/Hollowbody.webp,"Aventura, Indie","•Sistema Operativo: Windows 10 x64 Bit
 •Procesador: Intel Core i5-4670K | AMD FX-4350
 •Memoria: 8 Gigas de RAM
@@ -2390,8 +2457,7 @@ Hotel Owner Simulator,6.5 Gb,PC,portadas/Hotel Owner Simulator.webp,"Casual, Ind
 •Intel Core i3-8100 / AMD Ryzen 3 1300X or better
 •Memoria: 
 •16 GB de RAM
-•Nvidia GTX 1060 6GB or equivalent
-",2025,
+•Nvidia GTX 1060 6GB or equivalent",2025,
 Hotel Renovator,22.6 Gb,PC,portadas/Hotel Renovator.webp,"Aventura, Casual, Indie, Simuladores","•Requiere un procesador y un sistema operativo de 64 bits
 •Sistema Operativo: Windows 10 (64 bits)
 •Procesador: AMD FX-4300 X4 | Intel Core i3-4130
@@ -2399,6 +2465,11 @@ Hotel Renovator,22.6 Gb,PC,portadas/Hotel Renovator.webp,"Aventura, Casual, Indi
 •Gráficos: AMD AMD Radeon RX 560 | Geforce GTX 750 Ti – 4 Gigas VRAM
 •Almacenamiento: 60 Gigas de espacio disponible
 •Rendimiento: 30 FPS, 1920×1080 | En bajo.",2023,
+House Builder 2,1.4 Gb,PC,portadas/House Builder 2.webp,"Aventura, Casual, Indie, Simuladores","Requiere un procesador y un sistema operativo de 64 bits
+Sistema Operativo: Windows 8 (64-bit) o más reciente
+Procesador: Intel i5-760 (4*2800), AMD Phenom II
+Memoria: 6 Gigas de RAM
+Gráficos: GeForce GTX 760, AMD R7-260X",2025,
 House Flipper,6.6 Gb,PC,portadas/House Flipper.webp,"Indie, Simuladores","•Requiere un procesador y un sistema operativo de 64 bits
 •Sistema Operativo: Windows 7/8/10
 •Procesador: Intel Core i3 3,20GHz / AMD Phenom II X4 955 3,2 GHz
@@ -2412,6 +2483,13 @@ House Flipper 2,7.6 Gb,PC,portadas/House Flipper 2.webp,"Casual, Indie, Simulado
 •Gráficos: AMD Radeon RX 580 4 Gigas | NVIDIA GeForce GTX 1060 6 Gigas
 •DirectX: Versión 11
 •Almacenamiento: 6 Gigas de espacio disponible",2023,
+HUMANKIND,10.5 Gb,PC,portadas/HUMANKIND.webp,Estrategia,"Requiere un procesador y un sistema operativo de 64 bits
+Sistema Operativo: Windows 7, 64-bit
+Procesador: Intel i5 4th generación / AMD FX-8300
+Memoria: 8 Gigas de RAM
+Gráficos: NVIDIA GTX 770 / AMD R9 290
+DirectX: Versión 11
+Almacenamiento: 25 Gigas de espacio disponible ",2021,
 I AM Your Beast,1.4 Gb,PC,portadas/I AM Your Beast.webp,Acción,"•Sistema Operativo: Windows 7 64 Bit / Windows 8 64 Bit / Windows 10 64 Bit
 •Procesador: 
 •Intel Core i3 3.0 GHz
@@ -2783,21 +2861,22 @@ Little Known Galaxy,1.2 Gb,PC,portadas/Little Known Galaxy.webp,"""Simulador de 
 •Memoria: 
 •4 GB de RAM
 •Gráficos: Independent graphics card",2024,
-Little Nightmares,4.1 Gb,PC,portadas/Little Nightmares.webp,Aventura,"•Sistema Operativo: Windows 7, 64-bit
+Little Nightmares,2.8 Gb,Nintendo Switch,portadas/Little Nightmares.webp,Plataformas Puzle Aventura,,2017,
+Little Nightmares Complete Edition,2.0 Gb,PC,portadas/Little Nightmares Complete Edition.webp,Aventura,"•Sistema Operativo: Windows 7, 64-bit
 •Procesador: Intel CPU Core i3
 •Memoria: 4 GB de RAM
 •Gráficos: Nvidia GTX 460
 •DirectX: Versión 11
 •Red: Conexión de banda ancha a Internet
-•Almacenamiento: 10 GB de espacio disponible",2017,
-Little Nightmares,2.8 Gb,Nintendo Switch,portadas/Little Nightmares.webp,"""Plataformas, Puzle, Aventura""",,2017,
+•Almacenamiento: 10 GB de espacio disponible",2018,
 Little Nightmares II,5.2 Gb,PC,portadas/Little Nightmares II.webp,Aventura,"•Requiere un procesador y un sistema operativo de 64 bits
 •Sistema Operativo: Windows 10
 •Procesador: Intel Core i5-2300 | AMD FX-4350
 •Memoria: 4 Gigas de RAM
 •Gráficos: Nvidia GeForce GTX 570, 1 Giga | AMD Radeon HD 7850, 2 Gigas
 •DirectX: Versión 11",2021,
-Little Nightmares II,5.6 Gb,Nintendo Switch,portadas/Little Nightmares II.webp,"""Plataformas, Puzle, Aventura""",,2021,
+Little Nightmares II,5.6 Gb,Nintendo Switch,portadas/Little Nightmares II.webp,Plataformas Puzle Aventura,,2021,
+Little Nightmares III,11.9 Gb,PC,portadas/Little Nightmares III.webp,Aventura,Sistema Operativo: Windows 11 Procesador: Intel Core i5-6500 o AMD Ryzen 3 1200 Memoria: 8 Gigas de RAM Gráficos: Nvidia GeForce GTX 1060 o AMD Radeon RX 580,2025,
 Lollipop Chainsaw Repop,12.6 Gb,PC,portadas/Lollipop Chainsaw Repop.webp,,,2025,
 London The Official Video Game of the Olympic Games,2.8 Gb,PC,portadas/London The Official Video Game of the Olympic Games.webp,"""Deportes, Casual, Arcade""","•Sistema Operativo: Windows 10
 •Procesador: 
@@ -3119,7 +3198,7 @@ METAL GEAR RISING REVENGEANCE,24.0 Gb,PC,portadas/METAL GEAR RISING REVENGEANCE.
 •Intel Core i5 2400
 •2 GB de RAM
 •Nvidia Geforce GTS 450",2014,
-Metal Gear Solid Delta Snake Eater Deluxe Edition,73.7 Gb,PC,portadas/Metal Gear Solid Delta Snake Eater Deluxe Edition.webp,,,2025,true
+Metal Gear Solid Delta Snake Eater Deluxe Edition,73.7 Gb,PC,portadas/Metal Gear Solid Delta Snake Eater Deluxe Edition.webp,,,2025,
 Metal Gear Solid Master Collection Vol.1,7.7 Gb,Nintendo Switch,portadas/Metal Gear Solid Master Collection Vol.1.webp,"""Violentos, Sangriento""",,2025,
 Metal Gear Solid Master Collection Vol.1,23.1 Gb,PC,portadas/Metal Gear Solid Master Collection Vol.1.webp,,,2025,
 Metal Gear Solid V Ground Zeroes,6.2 Gb,PC,portadas/Metal Gear Solid V Ground Zeroes.webp,"Acción, Aventura",,2014,
@@ -3220,6 +3299,11 @@ MLB 2KCuba20,2.9 Gb,PC,portadas/MLB 2KCuba20.webp,"Deporte, Simulación","•PRO
 MLB® The Show™ 23,5.7 Gb,Nintendo Switch,portadas/MLB® The Show™ 23.webp,,,,
 MLB® The Show™ 24,55.8 Gb,Nintendo Switch,portadas/MLB® The Show™ 24.webp,,,,
 MLB® The Show™ 24,55.8 Gb,PC Emulados,portadas/MLB® The Show™ 24.webp,,,,
+Monopoly Plus,0.6 Gb,PC,portadas/Monopoly Plus.webp,Casual,"Sistema Operativo: Windows 7 SP1, Windows 8.1, Windows 10 (Sólo para versiones de 64-bit)
+Procesador: Intel Core i3-550 / 3.0 GHz o AMD Phenom II X4 945 / 3.0 GHz o equivalente
+Memoria: 4 GB de RAM
+Gráficos: NVIDIA GeForce GTX460v2 o AMD HD7750 (1024 MB VRAM con Shader Model 5.0 o superior)
+DirectX: Versión 11",2017,
 Monster Hunter Rise Sunbreak,46.6 Gb,Nintendo Switch,portadas/Monster Hunter Rise Sunbreak.webp,"""Acción, Personalización de personajes, Caza""",,2022,
 Monster Hunter Rise Sunbreak,33.0 Gb,PC,portadas/Monster Hunter Rise Sunbreak.webp,Acción,"•Requiere un procesador y un sistema operativo de 64 bits
 •Sistema Operativo: Windows 10 64-bit）
@@ -3289,6 +3373,10 @@ Mortal Kombat Komplete Edition,9.4 Gb,PC,portadas/Mortal Kombat Komplete Edition
 •Memoria: 
 •8 GB de RAM
 •ATI Radeon HD 4800 Series, Nvidia GeForce 8800GT or greater""",2012,
+mortal kombat legacy kollection,11.8 Gb,PC,portadas/mortal kombat legacy kollection.webp,Acción,"•Sistema Operativo: Windows 10 (64-bit)
+•Procesador: Intel Core i3-4100, AMD A8-6600K
+•Memoria: 8 Gigas de RAM
+•Gráficos: Nvidia GeForce GTX 460, AMD Radeon R7 250X",2025,true
 Mortal Kombat Trilogy Enhanced Edition,0.0 Gb,PC,portadas/Mortal Kombat Trilogy Enhanced Edition.webp,"""Artes marciales, JcJ, 2D""","•Sistema Operativo: Windows 10 or newer
 •Procesador: 
 •Intel i3 @ 3.0GHz or AMD equivalent.
@@ -3626,12 +3714,18 @@ Ninja five o,1.3 Gb,PC,portadas/Ninja five o.webp,Acción,"•Sistema Operativo:
 •4 GB de RAM
 •NVIDIA GeForce GTX 750 or equivalent",2025,
 Ninja Gaiden 2 Black,79.8 Gb,PC,portadas/Ninja Gaiden 2 Black.webp,"Acción, Aventura",,2025,
+NINJA GAIDEN 4,53.2 Gb,PC,portadas/NINJA GAIDEN 4.webp,Acción Aventura,"Sistema Operativo: Windows 10 | 11, 64bit Procesador: Intel Core i5-8400 o AMD Ryzen 5 3400G",2025,true
 Ninja Gaiden Master Collection,12.2 Gb,PC,portadas/Ninja Gaiden Master Collection.webp,"Acción, Aventura","•Requiere un procesador y un sistema operativo de 64 bits
 •Sistema Operativo: Windows 10, 64bit
 •Procesador: Intel Core i3 4130 o superior
 •Memoria: 4 Gigas de RAM
 •Gráficos: NVIDIA GeForce GTX 970, AMD R7 370 DirectX: Versión 11
 •VRAM: 4 Gigas",2021,
+NINJA GAIDEN Ragebound,0.7 Gb,PC,portadas/NINJA GAIDEN Ragebound.webp,Acción Aventura Indie,"Requiere un procesador y un sistema operativo de 64 bits
+Sistema Operativo: Windows 10
+Procesador: Intel Core Duo E8300 o AMD Phenom II X2 550
+Memoria: 6 Gigas de RAM
+Gráficos: NVIDIA GeForce GT 220, 1 Gigas o AMD Radeon HD 4550, 1Gigas ",2025,
 Nioh,50.3 Gb,PC,portadas/Nioh.webp,"Acción, Rol",,2021,
 Nioh 2 The Complete Edition,61.6 Gb,PC,portadas/Nioh 2 The Complete Edition.webp,"Acción, Rol",,2021,
 No Man's Sky Synthesis,8.4 Gb,PC,portadas/No Man's Sky Synthesis.webp,"""Mundo abierto, Supervivencia en mundo abierto, Espacio""","•Sistema Operativo: Windows 10/11 (64-bit versions)
@@ -3815,7 +3909,7 @@ Overcooked! All You Can Eat,15.4 Gb,Nintendo Switch,portadas/Overcooked! All You
 Pac Man World 2 Re Pac,4.8 Gb,PC,portadas/Pac Man World 2 Re Pac.webp,Accion Aventura,"•Sistema Operativo : Windows 7 SP1 / Windows 8.1 / Windows 10 (64bit versions only) 
 •Micro Procesador : Intel Core i3-8100 / AMD Ryzen 3 3100 
 •Memoria RAM : 8 GB 
-•Tarjeta de Vídeo : Nvidia GeForce GTX 650 Ti / AMD Radeon HD 7770",2025,true
+•Tarjeta de Vídeo : Nvidia GeForce GTX 650 Ti / AMD Radeon HD 7770",2025,
 Pacific Drive,10.0 Gb,PC,portadas/Pacific Drive.webp,"Acción, Aventura, Indie, Carreras, Simuladores","•Requiere un procesador y un sistema operativo de 64 bits
 •Sistema Operativo: Windows 10
 •Procesador: Intel Core i5 8600
@@ -3886,7 +3980,9 @@ PixARK,1.4 Gb,PC,portadas/PixARK.webp,"Acción, Aventura, Casual, Multijugador m
 •Almacenamiento: 15 Gigas de espacio disponible",2019,
 pixelmon arena,2.8 Gb,PC,portadas/pixelmon arena.webp,Acción,,2024,
 Planet pioneers,1.3 Gb,PC,portadas/Planet pioneers.webp,,,,
+Plants vs Zombies Replanted,1.4 Gb,PC,portadas/Plants vs Zombies Replanted.webp,Estrategia,Sistema Operativo: Windows 10 64-bit Procesador: AMD FX-6300 | 3rd gen i3 Memoria: 4 Gigas de RAM Gráficos: Intel Integrada,2025,true
 Plants vs. Zombies Battle for Neighborville™,6.4 Gb,Nintendo Switch,portadas/Plants vs. Zombies Battle for Neighborville™.webp,"""Disparos, Estrategia, Táctica""",,2019,
+Pokemon Legends Z A,4.0 Gb,Nintendo Switch,portadas/Pokemon Legends Z A.webp,Aventuras,Tener la consola Xd,2025,true
 Pokémon Escarlata,11.6 Gb,Nintendo Switch,portadas/Pokémon Escarlata.webp,"""Rol, Estrategia, Aventura""",,2023,
 Pokémon Escarlata,11.6 Gb,PC Emulados,portadas/Pokémon Escarlata.webp,"Role-playing (RPG), Turn-based strategy (TBS), Adventure",,2023,
 Pokémon Legends Arceus,6.5 Gb,Nintendo Switch,portadas/Pokémon Legends Arceus.webp,"""Rol, Estrategia, Aventura""",,2022,
@@ -3935,6 +4031,13 @@ Prison Architect,0.7 Gb,PC,portadas/Prison Architect.webp,"Indie, Simuladores, E
 •Memory:6 GB RAM 
 •Graphics:Nvidia 8600 / Radeon equivalent (2009 era) 
 •Hard Drive:400 MB HD space",2015,
+Prison Escape Simulator Dig Out,4.5 Gb,PC,portadas/Prison Escape Simulator Dig Out.webp,Acción Aventura Indie,"Sistema Operativo: Windows (64-bit) 10
+Procesador: Intel Core i3-3220 | i3-13100T, AMD A10 6800K | Athlon X4 950
+Memoria: 4 Gigas de RAM
+Gráficos: NVidia GeForce GTX 660 2Gigas | GTX 1050 2Gigas, AMD Radeon R7 265 2Gigas | RX 460 2Gigas
+DirectX: Versión 11
+Almacenamiento: 12 Gigas de espacio disponible
+Notas adicionales: 1080p 60fps ",2025,
 Pro Evolution Soccer 2016,6.2 Gb,PC,portadas/Pro Evolution Soccer 2016.webp,Sport,,2018,
 Pro Evolution Soccer2017,10.8 Gb,PC,portadas/Pro Evolution Soccer2017.webp,,,,
 Pro Evolution Soccer5,2.3 Gb,PC,portadas/Pro Evolution Soccer5.webp,,,2025,
@@ -4286,6 +4389,7 @@ Shing,2.9 Gb,PC,portadas/Shing.webp,Acción,"•Sistema Operativo: Windows 7 SP1
 •Intel i3 2100+ or AMD FX-4100+
 •2 GB de RAM
 •Gráficos: 512 MB VRAM, nVidia GT 720+ or AMD HD 5450+ or Intel HD Graphics 5000+",2023,
+SHINOBI Art of Vengeance,2.1 Gb,PC,portadas/SHINOBI Art of Vengeance.webp,,,2025,
 Sid Meier's Civilization V Complete Edition,5.7 Gb,PC,portadas/Sid Meier's Civilization V Complete Edition.webp,"Simulator, Strategy, Turn-based strategy (TBS)",,2014,
 Sid Meier's Civilization VI Gathering Storm,11.4 Gb,PC,portadas/Sid Meier's Civilization VI Gathering Storm.webp,Estrategia,,2019,
 Sifu Deluxe Edition,13.7 Gb,PC,portadas/Sifu Deluxe Edition.webp,"Acción, Lucha, Indie","•Sistema Operativo: Windows 8.1
@@ -4310,10 +4414,11 @@ Silent Hill 3,2.7 Gb,PC,portadas/Silent Hill 3.webp,"Puzzle, Adventure","•Sist
 •Memoria: 256 MB
 •Video: GeForce3 Ti/Radeon 8500 de 32MB
 •Disco duro: 5.2 GB",2012,
+silent hill 4 the room,2.3 Gb,PC,portadas/silent hill 4 the room.webp,terror,,,
 Silent Hill F,41.6 Gb,PC,portadas/Silent Hill F.webp,Acción Aventura,"•Sistema Operativo: Windows 11 x64 
 •Procesador: Intel Core i5-8400 | AMD Ryzen 5 2600 
 •Memoria: 16 Gigas de RAM 
-•Gráficos: NVIDIA GeForce GTX 1070 Ti o AMD Radeon RX 5700                                                                                                                                                                         ",2025,true
+•Gráficos: NVIDIA GeForce GTX 1070 Ti o AMD Radeon RX 5700                                                                                                                                                                         ",2025,
 Simrail The Railway Simulator,56.3 Gb,PC,portadas/Simrail The Railway Simulator.webp,Simulator,"•Sistema Operativo: 64-bit Windows 7 Service Pack 1, Windows 8 / 8.1 or Windows 10
 •Intel Core i5-4690 @ 3.5 GHz or AMD Ryzen 5 1500X @ 3.7 GHz
 •8 GB de RAM
@@ -4328,7 +4433,7 @@ Slime Rancher,0.6 Gb,PC,portadas/Slime Rancher.webp,"Acción, Aventura, Indie, S
 •Intel Core i5-7400 @ 3.3 GHz or AMD Ryzen 3 3300X
 •8 GB de RAM
 •NVIDIA GeForce GTX 1050-TI or AMD Radeon RX 5500 XT",2017,
-Slime Rancher 2,2.6 Gb,PC,portadas/Slime Rancher 2.webp,"Acción, Aventura, Casual, Indie, Simuladores, Acceso anticipado",,2022,true
+Slime Rancher 2,2.6 Gb,PC,portadas/Slime Rancher 2.webp,"Acción, Aventura, Casual, Indie, Simuladores, Acceso anticipado",,2022,
 Slime Rancher Plortable Edition,0.9 Gb,Nintendo Switch,portadas/Slime Rancher Plortable Edition.webp,"Simulator, Adventure, Indie",,2021,
 Smalland Survive the Wilds,7.6 Gb,PC,portadas/Smalland Survive the Wilds.webp,"Acción, Aventura, Indie, Rol","•Requiere un procesador y un sistema operativo de 64 bits
 •Sistema Operativo: Windows 7 SP1
@@ -4405,6 +4510,13 @@ Sonic Colors Ultimate,4.6 Gb,Nintendo Switch,portadas/Sonic Colors Ultimate.webp
 Sonic Colors Ultimate,4.6 Gb,PC Emulados,portadas/Sonic Colors Ultimate.webp,"Platform, Adventure",,2021,
 SONIC FORCES,6.6 Gb,Nintendo Switch,portadas/SONIC FORCES.webp,"""Plataformas, Estrategia, Aventura""",,2017,
 Sonic Frontiers,10.5 Gb,Nintendo Switch,portadas/Sonic Frontiers.webp,"""Plataformas, Aventura""",,2022,
+Sonic Unleashed,8.5 Gb,PC,portadas/Sonic Unleashed.webp,"Acción, Aventura, Plataformas","•Sistema Operativo: Windows 10 (versión 1909)
+•Procesador con soporte para el set de instrucciones AVX:
+•Intel: Sandy Bridge (Intel Core 2nd Generación)
+•AMD: Bulldozer (AMD FX series)
+•Graficas con soporte para Direct3D 12.0 (Shader Model 6) o Vulkan 1.2:
+•NVIDIA: GeForce GT 630 (Kepler)
+•AMD: Radeon HD 7750",2008,
 Sons of the Forest,8.4 Gb,PC,portadas/Sons of the Forest.webp,"Acción, Aventura, Indie, Simuladores","•Sistema Operativo: Windows 10 (64-bits)
 •Procesador: INTEL CORE I5-8400 o AMD RYZEN 3 3300X
 •Memoria: 12 Gigas de RAM
@@ -4622,6 +4734,10 @@ Subnautica,11.3 Gb,PC,portadas/Subnautica.webp,"Aventura, Indie","•Sistema Ope
 •Procesador: Intel Haswell 2 cores / 4 threads – 2.5Ghz o equivalente
 •Tarjeta Gráfica: Intel HD 4600 o equivalente
 •Espacio Libre en el Disco Duro: 6 Gigas",2018,
+Subnautica Below Zero,5.0 Gb,PC,portadas/Subnautica Below Zero.webp,"Aventura, Indie","•Sistema Operativo: Windows 7 64-bit
+•Procesador: Intel Core i3 / AMD Ryzen 3 2.6ghz+
+•Memoria: 8 Gigas de RAM
+•Gráficos: Intel HD 530 o mejor",2021,
 Subsistence,2.1 Gb,PC,portadas/Subsistence.webp,"Acción, Acceso anticipado","•Sistema Operativo: Windows 7+
 •Intel Core 2 Duo E4600 2.4ghz or Athlon 64 x2 Dual Core 5200
 •2 GB de RAM
@@ -4671,6 +4787,10 @@ Tales of Kenzera ZAU,14.5 Gb,PC,portadas/Tales of Kenzera ZAU.webp,"Acción, Ave
 •Gráficos: NVIDIA GTX 1060 6 Gigas | AMD RX 580 8 Gigas
 •DirectX: Versión 12
 •Almacenamiento: 30 Gigas de espacio disponible",2024,
+tales of xillia remastered,15.1 Gb,PC,portadas/tales of xillia remastered.webp,"Acción, Rol","•Sistema Operativo: Windows 11
+•Procesador: Intel Core i3-8100 | AMD Ryzen 3 3100
+•Memoria: 8 Gigas de RAM
+•Gráficos: Nvidia GeForce GTX 550 Ti [1 Gigas] | AMD Radeon HD 5770 [1 Gigas] | Intel Arc A310 [4 Gigas]",2025,true
 Tamarin,9.3 Gb,PC,portadas/Tamarin.webp,"Acción, Aventura, Indie","•Sistema Operativo: Windows 7, 8, 10 (64-bits)
 •Procesador: Intel i5
 •Memoria: 8 Gigas de RAM
@@ -4743,6 +4863,10 @@ The Crew,17.2 Gb,PC,portadas/The Crew.webp,"""Carreras, Aventura""","•Sistema 
 •Intel Core i5-4460, AMD Ryzen5 1400
 •8 GB de RAM
 •NVIDIA GeForce GTX 1060 6GB or AMD Radeon RX 480 8GB",2014,
+The Crew 2,31.5 Gb,PC,portadas/The Crew 2.webp,"Acción, Carreras","•Sistema Operativo: Windows 10 y 11
+•Procesador: Intel Core i5-2400s @ 2.5 GHz o AMD FX-6100 @ 3.3 GHz o equivalente
+•Memoria: 8 Gigas de RAM
+•Gráficos: NVIDIA GeForce GTX 660 o AMD HD 7870",2018,true
 The Dark Esttales,4.4 Gb,PC,portadas/The Dark Esttales.webp,"Acción, Aventura",,2022,
 The Dark Pictures Anthology The Devil in Me,31.5 Gb,PC,portadas/The Dark Pictures Anthology The Devil in Me.webp,Aventura,,2022,
 the dawning clocks of time remake,9.3 Gb,PC,portadas/the dawning clocks of time remake.webp,"Acción, Aventura, Indie","•Sistema Operativo: Windows 7, Windows 8, Windows 10
@@ -4764,6 +4888,7 @@ THE FOREST,1.9 Gb,PC,portadas/THE FOREST.webp,"Acción, Aventura, Indie, Simulad
 •4 GB de RAM
 •Sistema Operativo: 
 •NVIDIA GeForce 8800GT",2018,
+The Front,57.1 Gb,PC,portadas/The Front.webp,supervivencia,,2025,
 The Genesis Order,12.5 Gb,PC,portadas/The Genesis Order.webp,"Aventura, Casual, Indie","•Sistema Operativo: Windows 7, 8, Windows 10 (64 bit)
 •AMD FX-8320 (3.5 GHz) / Intel i5-4690K (3.5 GHz) or better
 •4 GB de RAM
@@ -4803,6 +4928,10 @@ The Last Alchemist,1.5 Gb,PC,portadas/The Last Alchemist.webp,"Aventura, Simulad
 •4 GB de RAM
 •Sistema Operativo: 
 •Gráficos: Intel(R) HD Graphics 520",2024,
+The Last Faith,1.2 Gb,PC,portadas/The Last Faith.webp,"Acción, Aventura, Indie","•Sistema Operativo: Windows 7
+•Procesador: Intel Core 2 Duo E7500 2.93 GHz | AMD Athlon 64 X2 Dual Core Processor 5600+ 2.9GHz
+•Memoria: 2 Gigas de RAM
+•Gráficos: GeForce 9600 GT | AMD Radeon HD 6450",2023,
 The Last FARMER,7.2 Gb,PC,portadas/The Last FARMER.webp,"Acción, Aventura, Simuladores","•Sistema Operativo: Requiere un procesador y un sistema operativo de 64 bits
 •8 GB de RAM
 •GTX 1050 Ti",2024,
@@ -4829,6 +4958,7 @@ The Lost Village,4.5 Gb,PC,portadas/The Lost Village.webp,"Aventura, Indie, Rol,
 •Intel Core i5-7600K or AMD Ryzen 3 1200
 •16 GB de RAM
 •NVIDIA GeForce GTX 770, 4 GB or AMD Radeon R9 270X, 4 GB or Intel Arc A580, 8 GB",2024,
+the mageseeker a league of legends story,3.2 Gb,PC,portadas/the mageseeker a league of legends story.webp,,,,
 The Mean Greens Plastic Warfare,6.4 Gb,PC,portadas/The Mean Greens Plastic Warfare.webp,"Acción, Indie","•Sistema Operativo: windows 7
 •2 GHz Dual-Core 64-bit CPU
 •4 GB de RAM
@@ -4843,6 +4973,7 @@ The Pioneers Surviving Desolation,2.3 Gb,PC,portadas/The Pioneers Surviving Deso
 The Planet Crafter,2.9 Gb,PC,portadas/The Planet Crafter.webp,Aventura,"•Sistema Operativo: Windows 10 - 64-bit
 •Intel Core2 Duo 2.4GHz o equivalente
 •4 GB de RAM",2024,
+The Precinct,2.8 Gb,PC,portadas/The Precinct.webp,,,,
 The Quarry,34.9 Gb,PC,portadas/The Quarry.webp,Aventura,,2022,
 The Rogue Prince of Persia,1.0 Gb,PC,portadas/The Rogue Prince of Persia.webp,"Acción, Aventura","•Sistema Operativo: Windows 10
 •Intel Core i5-4460 3.2 GHz / AMD Ryzen 3 1200 3.2 GHz
@@ -4888,6 +5019,7 @@ Thymesia,6.1 Gb,PC,portadas/Thymesia.webp,Acción,"•Sistema Operativo: Windows
 •Intel Core i5 or AMD Ryzen 5
 •8 GB de RAM
 •NVIDIA GeForce GTX 950 or Radeon HD 7970",2022,
+Tiebreak Plus Official Game Of The Atp And Wta,44.3 Gb,PC,portadas/Tiebreak Plus Official Game Of The Atp And Wta.webp,Deportes,,2025,
 Timberborn Badwater,2.5 Gb,PC,portadas/Timberborn Badwater.webp,,,,
 Tintin Reporter Cigars of the Pharaoh,30.6 Gb,PC,portadas/Tintin Reporter Cigars of the Pharaoh.webp,"Acción, Aventura","•Sistema Operativo: Windows 10 x64
 •CPU Intel(R) Core(TM) i5-10600K CPU @ 4.10GHz / AMD Ryzen 5 4600H
@@ -4929,6 +5061,11 @@ Tom Clancy's Ghost Recon Wildlands Ultimate Edition,73.7 Gb,PC,portadas/Tom Clan
 •6 GB de RAM
 •NVIDIA GeForce GTX660 / AMD R9 270X (2GB VRAM with Shader Model 5.0 or better)",2018,
 Tom Clancy's Hawx 2,6.3 Gb,PC,portadas/Tom Clancy's Hawx 2.webp,"Simulator, Adventure",,2010,
+Tom Clancy's Splinter Cell Pandora Tomorrow,2.9 Gb,PC,portadas/Tom Clancys Splinter Cell Pandora Tomorrow.webp,Acción,"•Sistema Operativo: Windows 7, 10 y Windows 11
+•Procesador: Intel Pentium IV o Athlon 2.2 GHz
+•Memoria: 256 Megas de RAM
+•Gráficos: 128 Megas + Compatibilidad con DirectX 8.1
+•Almacenamiento: 5 Gigas de espacio disponible",2004,
 Tom Clancys Rainbow Six Vegas 2,4.8 Gb,PC,portadas/Tom Clancys Rainbow Six Vegas 2.webp,,,2025,
 Tom Clancys Splinter Cell Black List,22.6 Gb,PC,portadas/Tom Clancys Splinter Cell Black List.webp,,,,
 Tom Clancys Splinter Cell Conviction,7.2 Gb,PC,portadas/Tom Clancys Splinter Cell Conviction.webp,Acción,,2010,
@@ -4945,7 +5082,7 @@ Tomb Raider Lara Croft and the Temple of Osiris,2.7 Gb,PC,portadas/Tomb Raider L
 Tony Hawks Pro Skater 3 Plus 4,49.6 Gb,PC,portadas/Tony Hawks Pro Skater 3 Plus 4.webp,Deportes,"•SO: Windows 10 
 •Procesador: AMD FX 6300 / Intel Core i3-4340 
 •Memoria: 8 GB de RAM 
-•Gráficos: AMD HD 7950 / NVIDIA GTX 660",2025,true
+•Gráficos: AMD HD 7950 / NVIDIA GTX 660",2025,
 Torchlight II,1.6 Gb,PC,portadas/Torchlight II.webp,"Acción, Aventura, Indie, Rol","•Sistema Operativo: Windows XP SP3 / Windows Vista / Windows 7 
 •Procesador: 1.4 GHz o superior, compatible con x86 
 •Memoria: 1 GB de RAM 
@@ -4962,6 +5099,10 @@ Tormented Souls,6.6 Gb,PC,portadas/Tormented Souls.webp,"Acción, Aventura","•
 •4 GB de RAM
 •Sistema Operativo: 
 •GeForce GTX 550 Ti / Radeon HD 6790 2GB VRAM*",2021,
+Tormented Souls 2,19.7 Gb,PC,portadas/Tormented Souls 2.webp,"Acción, Aventura","•Sistema Operativo: Windows 10
+•Procesador: Intel Core i5-3470 o AMD Ryzen 5 1400
+•Memoria: 12 Gigas de RAM
+•Gráficos: NVIDIA GeForce GTX 960, 4 Gigas o AMD Radeon R9 380, 2 Gigas",2025,true
 Total Overdose,1.5 Gb,PC,portadas/Total Overdose.webp,"Shooter, Adventure",,2005,
 Total Tank Simulator Italy,3.2 Gb,PC,portadas/Total Tank Simulator Italy.webp,"Acción, Indie, Simuladores, Estrategia","•Sistema Operativo: Windows 7
 •Procesador:Intel Core i5-7600K 
@@ -5030,7 +5171,7 @@ Tour de France,26.9 Gb,PC,portadas/Tour de France.webp,"Casual, Carreras, Simula
 Towa and the Guardians of the Sacred Tree,5.8 Gb,PC,portadas/Towa and the Guardians of the Sacred Tree.webp,: Accion,"SO: Windows 10 / Windows 11 
 •Procesador: Intel Core i3-8100 / AMD Ryzen 3 3100 
 •Memoria: 4 GB de RAM 
-•Gráficos: Nvidia GeForce GTX 650 / AMD Radeon R7 250",2025,true
+•Gráficos: Nvidia GeForce GTX 650 / AMD Radeon R7 250",2025,
 Train Yard Builder,9.6 Gb,PC,portadas/Train Yard Builder.webp,"""Un jugador, Trenes, Sandbox""","•Sistema Operativo: Microsoft Windows 10 (64-bit)
 •Intel i5 5 gen / AMD Ryzen 5 3600
 •8 GB de RAM
@@ -5053,6 +5194,10 @@ Trepang 2,16.3 Gb,PC,portadas/Trepang 2.webp,"Acción, Indie","•Sistema Operat
 •8 GB de RAM
 •NVIDIA GeForce GTX 760, 2 GB or AMD Radeon HD 7870, 2 GB or Intel Arc A380, 6 GB",2023,
 Trials of Mana,10.7 Gb,Nintendo Switch,portadas/Trials of Mana.webp,"""Rol, Aventura""",,2020,
+Trials Rising,27.5 Gb,PC,portadas/Trials Rising.webp,Carreras,"•Sistema Operativo: Windows 7
+•Procesador: Intel Core i5-2400, AMD FX-4100
+•Memoria: 4 Gigas de RAM
+•Gráficos: NVIDIA GeForce GTX 650 Ti o AMD Radeon HD 7770",2025,true
 Trine ,0.5 Gb,PC,portadas/Trine.webp,"Platform, Puzzle, Adventure, Indie","•Sistema Operativo: Windows 10/11
 •Procesador: 
 •Intel Core i7-2600K 3.40GHz or Ryzen 5 1600
@@ -5105,6 +5250,7 @@ UBOAT,15.5 Gb,PC,portadas/UBOAT.webp,"Acción, Indie, Rol, Simuladores, Estrateg
 •6 GB de RAM
 •Sistema Operativo: 
 •GeForce GTX 750 Ti 2GB (1080p Low) or AMD equivalents",2024,
+UFC Undisputed Forever,26.7 Gb,PC Emulados,portadas/UFC Undisputed Forever.webp,Deportes,,2025,
 Ultimate Epic Battle Simulator 2,7.8 Gb,PC,portadas/Ultimate Epic Battle Simulator 2.webp,"Acción, Aventura, Casual, Indie, Simuladores, Estrategia","•Sistema Operativo: Windows 7 (64bit)
 •Procesador: 
 •Intel Core 2 Duo E5200
@@ -5192,6 +5338,7 @@ Valkyrie Elysium,11.8 Gb,PC,portadas/Valkyrie Elysium.webp,"Acción, Rol","•Si
 •Memoria: 
 •8 GB de RAM
 •AMD Radeon™ RX 560 / NVIDIA® GeForce® GTX 960",2022,
+vampire the masquerade bloodlines 2,20.9 Gb,PC,portadas/vampire the masquerade bloodlines 2.webp,Acción Rol,Sistema Operativo: Windows 10 (64-bit) Procesador: Intel Core i3-8350K | AMD Ryzen 3 3300X Memoria: 8 Gigas de RAM Gráficos: NVIDIA GeForce GTX 1060 (6Gigas) | AMD Radeon RX 480 (8Gigas),2025,true
 vampire the masquerade redemption,1.3 Gb,PC,portadas/vampire the masquerade redemption.webp,"Violencia, Rol",,2017,
 Vanquish Deluxe,15.4 Gb,PC,portadas/Vanquish Deluxe.webp,,,,
 Victoria 3,4.7 Gb,PC,portadas/Victoria 3.webp,"Simuladores, Estrategia","•Sistema Operativo: Windows® 10 Home 64 Bit
@@ -5364,6 +5511,12 @@ WWW 2K25,89.0 Gb,PC,portadas/WWW 2K25.webp,"""Simulación, Deportes, Lucha libre
 •12 GB de RAM
 •GeForce GTX 1060 / Radeon RX 480",2025,
 Wylde Flowers,2.9 Gb,PC,portadas/Wylde Flowers.webp,"Aventura, Simuladores",,2022,
+XCOM 2 War of The Chosen,65.2 Gb,PC,portadas/XCOM 2 War of The Chosen.webp,Estrategia,"Sistemas Operativos: Windows 7, 64-bit
+Procesador: Intel Core 2 Duo E4700 2.6 GHz o AMD Phenom 9950 Quad Core 2.6 GHz
+Memoria: 4 Gigas de RAM
+Gráficos: 1 Giga ATI Radeon HD 5770, 1 Giga NVIDIA GeForce GTX 460 o mejor
+DirectX: Versión 11
+Almacenamiento: 45 Gigas de espacio disponible ",2016,
 Xenoblade Chronicles 3,18.8 Gb,Nintendo Switch,portadas/Xenoblade Chronicles 3.webp,"""Violentos, Sangriento, Realistas""",,2022,
 Yakuza 0,25.3 Gb,PC,portadas/Yakuza 0.webp,"Acción, Aventura, Rol",,2018,
 Yakuza 3 Remastered,20.6 Gb,PC,portadas/Yakuza 3 Remastered.webp,"Acción, Aventura",,2021,
@@ -5389,6 +5542,7 @@ Yu-Gi-Oh! Joey The Passion,0.4 Gb,PC,portadas/Yu-Gi-Oh! Joey The Passion.webp,"P
 •Intel Core i3-3210
 •4 GB de RAM
 •Gráficos: Intel(R) HD Graphics 4000",2004,
+ZED ZONE,0.7 Gb,PC,portadas/ZED ZONE.webp,Indie,,2025,
 ZenlessZoneZero Game,65.9 Gb,PC Online,portadas/ZenlessZoneZero Game.webp,,,,
 Zombie Army Dead War 4,7.6 Gb,Nintendo Switch,portadas/Zombie Army Dead War 4.webp,"""Disparos, Arcade""",,2020,
 Zombie Army Dead War 4,57.1 Gb,PC,portadas/Zombie Army Dead War 4.webp,"""Disparos, Arcade""","•Sistema Operativo: Windows 10 64-bit / Windows 7 64-bit*
