@@ -17,7 +17,7 @@ body {
 
 /* Contenedor principal del título y buscador */
 .title-search-container {
-  position: fixed;       /* Siempre fijo en pantalla */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -34,7 +34,7 @@ body {
 .title-section {
   display: flex;
   align-items: center;
-  flex-shrink: 0; /* Evita que el título se encoja */
+  flex-shrink: 0;
 }
 
 .title-section i {
@@ -55,7 +55,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-  white-space: nowrap; /* Evita que el título se divida en líneas */
+  white-space: nowrap;
 }
 
 /* Sección del buscador */
@@ -64,8 +64,8 @@ body {
   gap: 15px;
   align-items: center;
   flex-grow: 1;
-  max-width: 700px; /* Ancho máximo para el buscador */
-  justify-content: flex-end; /* Alinea el buscador a la derecha */
+  max-width: 700px;
+  justify-content: flex-end;
 }
 
 #searchInput, #platformSelect {
@@ -79,30 +79,30 @@ body {
 
 #searchInput {
   flex: 1;
-  min-width: 200px; /* Ancho mínimo para el input */
+  min-width: 200px;
 }
 
 #platformSelect {
-  min-width: 150px; /* Ancho mínimo para el selector de plataforma */
+  min-width: 150px;
 }
 
 /* 🧱 Columnas controladas */
 .catalog-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* móvil por defecto */
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 100px; /* Espacio para el header fijo */
+  margin-top: 100px;
 }
 
 @media (min-width: 768px) {
   .catalog-container {
-    grid-template-columns: repeat(4, 1fr); /* PC */
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/* 🎮 Tarjetas grandes y verticales */
+/* 🎮 Tarjetas */
 .game-card {
   background-color: #1e1e1e;
   border-radius: 8px;
@@ -117,7 +117,6 @@ body {
   transform: translateY(-5px);
 }
 
-/* 🖼️ Portadas verticales sin recorte */
 .game-cover {
   width: 100%;
   aspect-ratio: 5 / 7;
@@ -126,7 +125,6 @@ body {
   border-radius: 6px;
 }
 
-/* 📋 Info del juego */
 .game-info {
   padding: 15px;
   flex-grow: 1;
@@ -145,33 +143,15 @@ body {
   -webkit-line-clamp: 2;
   overflow: hidden;
   margin-bottom: 6px;
-  text-align: center; /* centrado del título */
+  text-align: center;
 }
 
-/* 📏 Tamaño centrado debajo del título */
 .game-size {
   font-size: 0.9rem;
   color: #aaaaaa;
   margin-bottom: 12px;
-  text-align: center; /* centrado */
+  text-align: center;
   display: block;
-}
-
-/* 📖 Botón de detalles */
-.details-btn {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  width: 100%;
-  transition: background-color 0.3s;
-}
-
-.details-btn:hover {
-  background-color: #45a049;
 }
 
 /* 📡 Estados */
@@ -192,85 +172,33 @@ body {
     padding: 15px;
     gap: 15px;
   }
-  
   .title-section {
     justify-content: center;
     margin-bottom: 10px;
   }
-  
-  .title-section i {
-    font-size: 1.8rem;
-  }
-  
-  .title-section h1 {
-    font-size: 1.5rem;
-  }
-  
-  .search-section {
-    max-width: 100%;
-    justify-content: center;
-  }
-  
-  #searchInput {
-    min-width: 150px;
-  }
-  
-  #platformSelect {
-    min-width: 120px;
-  }
-
-  .catalog-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 140px; /* Más margen porque en móviles el header ocupa más espacio */
-  }
-
-  .game-cover {
-    aspect-ratio: 5 / 7;
-  }
-  
-  /* Reducir tamaño del título en móviles */
-  .game-title {
-    font-size: 0.9rem;
-  }
+  .title-section i { font-size: 1.8rem; }
+  .title-section h1 { font-size: 1.5rem; }
+  .search-section { max-width: 100%; justify-content: center; }
+  #searchInput { min-width: 150px; }
+  #platformSelect { min-width: 120px; }
+  .catalog-container { grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 140px; }
+  .game-title { font-size: 0.9rem; }
 }
 
 @media (max-width: 480px) {
-  .title-search-container {
-    padding: 10px;
-  }
-  
-  .title-section i {
-    font-size: 1.5rem;
-    margin-right: 8px;
-  }
-  
-  .title-section h1 {
-    font-size: 1.2rem;
-  }
-  
-  .search-section {
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  #searchInput, #platformSelect {
-    width: 100%;
-    min-width: auto;
-  }
-
-  .catalog-container {
-    margin-top: 160px;
-  }
+  .title-search-container { padding: 10px; }
+  .title-section i { font-size: 1.5rem; margin-right: 8px; }
+  .title-section h1 { font-size: 1.2rem; }
+  .search-section { flex-direction: column; gap: 10px; }
+  #searchInput, #platformSelect { width: 100%; min-width: auto; }
+  .catalog-container { margin-top: 160px; }
 }
 
 /* ==================================== */
 /* ESTILOS NUEVOS PARA EL CARGA POR LOTES */
 /* ==================================== */
-
-/* Estilos para el contador de juegos - VISIBLE AHORA */
 .games-counter {
-  display: block; /* Cambiado de 'none' a 'block' */
+  display: block;
   text-align: center;
   margin: 20px 0;
   padding: 10px;
@@ -278,10 +206,9 @@ body {
   border-radius: 6px;
   color: #aaaaaa;
   font-size: 14px;
-  grid-column: 1 / -1; /* Ocupa todo el ancho de la cuadrícula */
+  grid-column: 1 / -1;
 }
 
-/* Estilos para el indicador de carga */
 .loading-indicator {
   display: none;
   background-color: rgba(0, 0, 0, 0.8);
@@ -290,7 +217,7 @@ body {
   border-radius: 30px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  grid-column: 1 / -1; /* Ocupa todo el ancho de la cuadrícula */
+  grid-column: 1 / -1;
   justify-self: center;
   margin: 20px 0;
 }
@@ -305,107 +232,218 @@ body {
   margin: 0 auto 8px;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
 
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
 /* Estilos para el botón de estrenos */
 .estrenos-btn {
-    background-color: #e91e63;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
-    transition: background-color 0.3s;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.estrenos-btn:hover { background-color: #c2185b; }
+
+@media (min-width: 768px) {
+  .search-section {
+    justify-content: center;   /* centra buscador + select + estrenos */
+    gap: 20px;                 /* espacio entre ellos */
+    margin-right: 100px;       /* deja hueco a la derecha para el carrito flotante */
+  }
+
+  .estrenos-btn {
+    margin-right: 0;           /* ya no necesita empujarse sola */
+  }
 }
 
-.estrenos-btn:hover {
-    background-color: #c2185b;
+/* ========================= */
+/* 🛒 ESTILOS DEL CARRITO */
+/* ========================= */
+.cart-container {
+  background: #1e1e1e;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 
-/* Estilos para el botón de volver en la página de estrenos */
-.back-btn {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
-    transition: background-color 0.3s;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+.cart-container h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #4CAF50;
 }
 
-.back-btn:hover {
-    background-color: #555;
+#cartList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .search-section {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .estrenos-btn, .back-btn {
-        margin-top: 10px;
-        width: 100%;
-        justify-content: center;
-    }
-}
-/* En styles.css */
-.theme-toggle {
-    margin-left: 15px;
+#cartList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #333;
+  font-size: 14px;
 }
 
-.theme-btn {
-    background: none;
-    border: none;
-    color: #ffffff;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: color 0.3s ease;
+#cartList button {
+  background: transparent;
+  border: none;
+  color: #ff5252;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.theme-btn:hover {
-    color: #4CAF50;
+#cartTotal {
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: right;
+  color: #fff;
 }
 
-/* Modo claro */
-body.light-mode {
-    background-color: #f5f5f5;
-    color: #333333;
+#sendWhatsApp {
+  display: block;
+  background: #25D366;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
-body.light-mode .header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
+#sendWhatsApp:hover {
+  background: #1ebe5d;
 }
 
-body.light-mode .game-card {
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.btn-group {
+  display: flex;
+  gap: 6px;
 }
 
-body.light-mode .title-section h1 {
-    background: linear-gradient(45deg, #2196F3, #03A9F4, #00BCD4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.btn-group .details-btn,
+.btn-group .add-cart-btn {
+  flex: 1;
+  padding: 6px 8px;
+  font-size: 0.8rem;
 }
+
+/* ========================= */
+/* 🎮 Botones del catálogo */
+/* ========================= */
+.btn-group .details-btn {
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  padding: 6px 8px;
+  font-size: 0.8rem;
+}
+
+.btn-group .details-btn:hover {
+  background-color: #45a049;
+}
+
+.btn-group .add-cart-btn {
+  background-color: #E53935; /* rojo igual al ícono del carrito */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  padding: 6px 8px;
+  font-size: 0.8rem;
+}
+
+.btn-group .add-cart-btn:hover {
+  background-color: #C62828;
+}
+
+.btn-group .add-cart-btn:disabled {
+  background-color: #777 !important;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+/* 🛒 Carrito flotante estilo gamer */
+.cart-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  background-color: #1e1e1e;   /* fondo oscuro */
+  border: 2px solid #E53935;   /* borde rojo gamer */
+  text-decoration: none;
+  box-shadow: 0 0 12px rgba(229, 57, 53, 0.6);
+}
+
+.cart-btn i {
+  font-size: 2rem;
+  color: #E53935;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.cart-btn:hover {
+  background-color: #2a2a2a;
+  box-shadow: 0 0 16px rgba(229, 57, 53, 0.9);
+}
+
+.cart-btn i:hover {
+  transform: scale(1.2);
+  color: #FF1744;
+}
+
+/* 🔢 Contador en la esquina del ícono */
+.cart-count {
+  position: absolute;
+  top: -6px;   /* lo sube arriba */
+  right: -6px; /* lo corre a la esquina */
+  background: #E53935;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 3px 5px;
+  min-width: 18px;
+  text-align: center;
+  line-height: 1;
+  box-shadow: 0 0 6px rgba(229, 57, 53, 0.8);
+  transition: transform 0.2s;
+}
+
+.cart-count.bump {
+  animation: bump 0.3s ease;
+}
+
+@keyframes bump {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.3); }
+  60%  { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+
+
+

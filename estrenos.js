@@ -1,3 +1,38 @@
+// =========================
+// Función para calcular precio
+// =========================
+function calcularPrecio(nombre, plataforma, tamaño) {
+    nombre = nombre.trim();
+    plataforma = plataforma.toLowerCase();
+    let t = parseFloat((tamaño || "").toLowerCase().replace("gb","").trim());
+
+    const preciosEspeciales = {
+    "EA SPORTS FC 26": 3000,
+    "Battlefield 3 Zolemu": 250,
+    "Battlefield 4 Zolemu": 250,
+    "World of Warcraft Cataclysm": 150,
+    "World of Warcraft Wrath of the Lich King": 150,
+    "World of Warcraft Pandaria": 200,
+	"Among Us": 100, 
+    "World of Warcraft Legion": 250,
+    };
+    if (preciosEspeciales[nombre]) return preciosEspeciales[nombre];
+
+    if (plataforma.includes("nintendo switch")) return 100;
+    if (plataforma.includes("pc online")) return 500;
+    if (plataforma.includes("pc emulado")) return 100;
+
+    if (!isNaN(t)) {
+        if (t <= 4.9) return 50;
+        if (t <= 14.9) return 60;
+        if (t <= 39.9) return 70;
+        if (t <= 69.9) return 90;
+        if (t <= 99.9) return 100;
+        if (t >= 100) return 200;
+    }
+    return "N/D";
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     let gamesData = [];
     let estrenosData = [];
@@ -20,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Filtrar solo los juegos que son estrenos
             estrenosData = gamesData.filter(game => game.Estreno === 'true');
             
-            // Si hay más de 8 estrenos, tomar solo los primeros 8
+            // Si hay más de 12 estrenos, tomar solo los primeros 12
             if (estrenosData.length > 12) {
                 estrenosData = estrenosData.slice(0, 12);
             }
@@ -57,13 +92,14 @@ document.addEventListener('DOMContentLoaded', function() {
         card.className = 'game-card';
         
         const coverPath = game.Portada || 'imagenes/placeholder.jpg';
+        let precio = calcularPrecio(game.Nombre, game.Plataforma, game.Tamaño);
         
         card.innerHTML = `
             <img src="${coverPath}" alt="${game.Nombre}" class="game-cover" loading="lazy" 
                  onerror="this.src='imagenes/placeholder.jpg'">
             <div class="game-info">
                 <h3 class="game-title">${game.Nombre}</h3>
-                <p class="game-size">${game.Tamaño || 'Tamaño no disponible'}</p>
+                <p class="game-size">📦 ${game.Tamaño || 'N/D'}   💲${precio} CUP</p>
                 <button class="details-btn" data-id="${game.id}">Detalles</button>
             </div>
         `;
