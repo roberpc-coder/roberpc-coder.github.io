@@ -4,28 +4,36 @@
     <title>Estrenos - Catálogo ROBER®PC</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estrenos - Catálogo ROBER®PC</title>
+    
+    <!-- Estilos principales -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome para íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Encabezado -->
     <div class="header">
         <div class="title-search-container">
             <div class="title-section">
                 <i class="fas fa-star"></i>
                 <h1>Estrenos ROBER®PC</h1>
             </div>
-            
             <div class="search-section">
-               
+                <!-- En estrenos no hay buscador, se deja vacío -->
             </div>
         </div>
     </div>
     
-    <div class="catalog-container" id="gameCatalog">
-       
-    </div>
+    <!-- Contenedor de catálogo -->
+    <div class="catalog-container" id="gameCatalog"></div>
 
+    <!-- Carrito flotante (igual que en principal) -->
+    <a href="carrito.html" class="cart-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </a>
+
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <script src="estrenos.js"></script>
 </body>

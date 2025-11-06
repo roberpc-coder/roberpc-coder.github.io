@@ -14,19 +14,30 @@
         <i class="fas fa-shopping-cart"></i>
         <h1>Mi Carrito</h1>
       </div>
-      <!-- 🔥 Quitamos la sección de volver -->
     </div>
   </div>
 
-  <!-- Carrito -->
-  <div class="cart-container" style="margin-top:120px;">
-    <h2>🛒 Lista de juegos</h2>
-    <ul id="cartList"></ul>
-    <p id="cartTotal"><strong>Total:</strong> 0 CUP</p>
-    <a id="sendWhatsApp" target="_blank">Enviar por WhatsApp</a>
-  </div>
+<!-- Carrito -->
+<div class="cart-container" style="margin-top:120px;">
+  <h2>🛒 Lista de juegos</h2>
+  <ul id="cartList"></ul>
+  <p id="cartTotal"><strong>Total:</strong> 0 CUP</p>
 
-  <!-- Script del carrito -->
-  <script src="carrito.js"></script>
+  <div class="cart-actions">
+    <!-- Enviar por WhatsApp: mantenemos el ID que usa tu JS -->
+    <a id="sendWhatsApp" class="whatsapp-btn" href="javascript:void(0)">
+      💬 Enviar por WhatsApp
+    </a>
+
+    <!-- Nuevo botón Vaciar carrito (ID que usará el JS) -->
+    <button id="clearCartBtn" class="clear-cart-btn">
+      🗑️ Vaciar carrito
+    </button>
+  </div>
+</div>
+
+<!-- Script del carrito -->
+<script src="carrito.js"></script>
 </body>
 </html>
+

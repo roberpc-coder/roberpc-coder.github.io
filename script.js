@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         catalogContainer.appendChild(fragment);
         currentIndex = endIndex;
-        updateGamesCounter();
+        // ❌ contador eliminado, ya no llamamos updateGamesCounter()
     }
 
     function createGameCard(game) {
@@ -188,18 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    function updateGamesCounter() {
-        let counter = document.getElementById('gamesCounter');
-
-        if (!counter) {
-            counter = document.createElement('div');
-            counter.id = 'gamesCounter';
-            counter.className = 'games-counter';
-            catalogContainer.insertBefore(counter, catalogContainer.firstChild);
-        }
-
-        counter.textContent = `Mostrando ${currentIndex} de ${filteredGames.length} juegos`;
-    }
+    // ❌ función updateGamesCounter eliminada
 
     function filterGames() {
         const searchTerm = (searchInput.value || '').toLowerCase();
@@ -247,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     e.target.style.backgroundColor = "#777";
                     e.target.disabled = true;
 
-                    // 👉 Actualizar contador
+                    // 👉 Actualizar contador del carrito
                     updateCartCount();
                 }
             }
@@ -280,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    const catalogContainer = document.getElementById('gameCatalog');
+        const catalogContainer = document.getElementById('gameCatalog');
     const config = { childList: true, subtree: true };
 
     const mutationObserver = new MutationObserver((mutations) => {
@@ -296,4 +285,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
     mutationObserver.observe(catalogContainer, config);
 });
-

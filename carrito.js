@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cartContainer = document.getElementById("cartList");
     const totalContainer = document.getElementById("cartTotal");
     const sendBtn = document.getElementById("sendWhatsApp");
+    const clearBtn = document.getElementById("clearCartBtn"); // debe existir en el HTML
 
     function getCart() {
         try {
@@ -10,8 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
             return [];
         }
     }
-    function setCart(cart) {
-        localStorage.setItem("cart", JSON.stringify(cart));
+    function setCart(nextCart) {
+        localStorage.setItem("cart", JSON.stringify(nextCart));
+        // Notificar a otras páginas para sincronizar botones/contador
+        window.dispatchEvent(new Event("storage"));
     }
 
     let cart = getCart();
@@ -36,9 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 cart.splice(index, 1);
                 setCart(cart);
                 updateCartView();
-
-                // 🔔 Avisar al catálogo que el carrito cambió
-                window.dispatchEvent(new Event("storage"));
             };
 
             li.appendChild(removeBtn);
@@ -51,23 +51,48 @@ document.addEventListener("DOMContentLoaded", () => {
         totalContainer.textContent = `Total: ${total} CUP`;
     }
 
-    sendBtn.addEventListener("click", () => {
-        if (!cart || cart.length === 0) return;
+    function vaciarCarrito() {
+        localStorage.removeItem("cart");
+        cart = [];
+        updateCartView();
+        // Notificar a otras páginas (estrenos/index) para re-habilitar botones
+        window.dispatchEvent(new Event("storage"));
+    }
 
-        let message = "🛒 Lista de juegos:\n\n";
-        let total = 0;
+    // Enviar por WhatsApp directo a tu número + confirmación para vaciar
+    if (sendBtn) {
+        sendBtn.addEventListener("click", () => {
+            cart = getCart();
+            if (!cart || cart.length === 0) return;
 
-        cart.forEach(g => {
-            message += `- ${g.Nombre} (${g.Tamaño}) - ${g.Precio} CUP\n`;
-            const p = parseFloat(g.Precio);
-            if (!isNaN(p)) total += p;
+            let message = "🛒 Lista de juegos:\n\n";
+            let total = 0;
+
+            cart.forEach(g => {
+                message += `- ${g.Nombre} (${g.Tamaño}) - ${g.Precio} CUP\n`;
+                const p = parseFloat(g.Precio);
+                if (!isNaN(p)) total += p;
+            });
+
+            message += `\nTotal: ${total} CUP`;
+
+            const url = `https://wa.me/5358024782?text=${encodeURIComponent(message)}`;
+            window.open(url, "_blank");
+
+            if (confirm("¿Desea vaciar el carrito después de enviar el pedido?")) {
+                vaciarCarrito();
+            }
         });
+    }
 
-        message += `\nTotal: ${total} CUP`;
-
-        const url = `https://wa.me/?text=${encodeURIComponent(message)}`;
-        window.open(url, "_blank");
-    });
+    // Botón “Vaciar carrito”
+    if (clearBtn) {
+        clearBtn.addEventListener("click", () => {
+            if (confirm("¿Seguro que quieres vaciar todo el carrito?")) {
+                vaciarCarrito();
+            }
+        });
+    }
 
     updateCartView();
 });

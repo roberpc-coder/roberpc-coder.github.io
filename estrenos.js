@@ -7,14 +7,14 @@ function calcularPrecio(nombre, plataforma, tamaño) {
     let t = parseFloat((tamaño || "").toLowerCase().replace("gb","").trim());
 
     const preciosEspeciales = {
-    "EA SPORTS FC 26": 3000,
-    "Battlefield 3 Zolemu": 250,
-    "Battlefield 4 Zolemu": 250,
-    "World of Warcraft Cataclysm": 150,
-    "World of Warcraft Wrath of the Lich King": 150,
-    "World of Warcraft Pandaria": 200,
-	"Among Us": 100, 
-    "World of Warcraft Legion": 250,
+        "EA SPORTS FC 26": 3000,
+        "Battlefield 3 Zolemu": 250,
+        "Battlefield 4 Zolemu": 250,
+        "World of Warcraft Cataclysm": 150,
+        "World of Warcraft Wrath of the Lich King": 150,
+        "World of Warcraft Pandaria": 200,
+        "Among Us": 100,
+        "World of Warcraft Legion": 250,
     };
     if (preciosEspeciales[nombre]) return preciosEspeciales[nombre];
 
@@ -37,86 +37,158 @@ document.addEventListener('DOMContentLoaded', function() {
     let gamesData = [];
     let estrenosData = [];
     const catalogContainer = document.getElementById('gameCatalog');
-    
-    // Mostrar indicador de carga
+
     catalogContainer.innerHTML = '<div class="loading">Cargando estrenos...</div>';
-    
-    // Cargar el archivo CSV
+
     Papa.parse('games.csv', {
         download: true,
         header: true,
         skipEmptyLines: true,
         complete: function(results) {
-            // Agregar un ID único a cada juego
             gamesData = results.data.map((game, index) => {
                 return { ...game, id: index.toString() };
             });
-            
-            // Filtrar solo los juegos que son estrenos
+
             estrenosData = gamesData.filter(game => game.Estreno === 'true');
-            
-            // Si hay más de 12 estrenos, tomar solo los primeros 12
+
+            // Mostrar solo 12 estrenos
             if (estrenosData.length > 12) {
                 estrenosData = estrenosData.slice(0, 12);
             }
-            
+
             renderEstrenos();
+            updateCartCount();
+            syncButtonsWithCart();
         },
         error: function(error) {
             catalogContainer.innerHTML = `<div class="error">Error al cargar los estrenos: ${error.message}</div>`;
         }
     });
-    
+
     function renderEstrenos() {
         if (estrenosData.length === 0) {
             catalogContainer.innerHTML = '<div class="error">No hay estrenos disponibles.</div>';
             return;
         }
-        
-        // Limpiar el contenedor
+
         catalogContainer.innerHTML = '';
-        
-        // Crear un fragmento de documento para mejor rendimiento
         const fragment = document.createDocumentFragment();
-        
+
         estrenosData.forEach(game => {
             const gameCard = createGameCard(game);
             fragment.appendChild(gameCard);
         });
-        
+
         catalogContainer.appendChild(fragment);
+
+        // Sincroniza estado de botones según el carrito actual
+        syncButtonsWithCart();
     }
-    
+
     function createGameCard(game) {
         const card = document.createElement('div');
         card.className = 'game-card';
-        
+
         const coverPath = game.Portada || 'imagenes/placeholder.jpg';
-        let precio = calcularPrecio(game.Nombre, game.Plataforma, game.Tamaño);
-        
+        const precio = calcularPrecio(game.Nombre, game.Plataforma, game.Tamaño);
+
+        // Igual que en la principal: usar .btn-group y respetar estado del carrito
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const isInCart = cart.some(item => item.id === game.id);
+
         card.innerHTML = `
-            <img src="${coverPath}" alt="${game.Nombre}" class="game-cover" loading="lazy" 
+            <img src="${coverPath}" alt="${game.Nombre}" class="game-cover" loading="lazy"
                  onerror="this.src='imagenes/placeholder.jpg'">
             <div class="game-info">
                 <h3 class="game-title">${game.Nombre}</h3>
                 <p class="game-size">📦 ${game.Tamaño || 'N/D'}   💲${precio} CUP</p>
-                <button class="details-btn" data-id="${game.id}">Detalles</button>
+                <div class="btn-group">
+                    <button class="details-btn" data-id="${game.id}">Detalles</button>
+                    <button class="add-cart-btn" data-id="${game.id}" 
+                        ${isInCart ? 'disabled' : ''} 
+                        style="${isInCart ? 'background-color:#777;' : ''}">
+                        ${isInCart ? 'En carrito' : 'Comprar'}
+                    </button>
+                </div>
             </div>
         `;
-        
         return card;
     }
-    
-    // Delegación de eventos para botones de detalles
+
+    // Delegación de eventos para botones
     catalogContainer.addEventListener('click', (e) => {
         if (e.target.classList.contains('details-btn')) {
             const gameId = e.target.getAttribute('data-id');
             window.location.href = `details.html?id=${gameId}`;
         }
+
+        if (e.target.classList.contains('add-cart-btn')) {
+            const gameId = e.target.getAttribute('data-id');
+            const game = estrenosData.find(j => j.id === gameId);
+            if (game) {
+                addToCart(game, e.target);
+            }
+        }
+    });
+
+    function addToCart(game, button) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const existe = cart.find(j => j.id === game.id);
+        if (!existe) {
+            cart.push({
+                id: game.id,
+                Nombre: game.Nombre,
+                Tamaño: game.Tamaño,
+                Precio: calcularPrecio(game.Nombre, game.Plataforma, game.Tamaño)
+            });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+
+            button.textContent = "En carrito";
+            button.style.backgroundColor = "#777";
+            button.disabled = true;
+        }
+    }
+
+    // Contador del carrito unificado
+    function updateCartCount() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const countSpan = document.querySelector('.cart-count');
+        if (countSpan) {
+            countSpan.textContent = cart.length;
+            // pequeña animación (si tu CSS tiene .bump)
+            countSpan.classList.add('bump');
+            setTimeout(() => countSpan.classList.remove('bump'), 300);
+        }
+    }
+
+    // Sincroniza botones con el estado del carrito (sin recargar)
+    function syncButtonsWithCart() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const inCartIds = new Set(cart.map(item => item.id));
+
+        document.querySelectorAll('.add-cart-btn').forEach(btn => {
+            const id = btn.getAttribute('data-id');
+            if (inCartIds.has(id)) {
+                btn.textContent = "En carrito";
+                btn.style.backgroundColor = "#777";
+                btn.disabled = true;
+            } else {
+                btn.textContent = "Comprar";
+                btn.style.backgroundColor = "";
+                btn.disabled = false;
+            }
+        });
+    }
+
+    // Escucha cambios desde carrito.html y actualiza sin recargar
+    window.addEventListener('storage', () => {
+        updateCartCount();
+        syncButtonsWithCart();
     });
 });
 
-// Detectar cuando las imágenes se cargan para aplicar la animación
+// Animación de carga de imágenes
 document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -129,10 +201,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
+
     const catalogContainer = document.getElementById('gameCatalog');
     const config = { childList: true, subtree: true };
-    
+
     const mutationObserver = new MutationObserver((mutations) => {
         mutations.forEach((mutation) => {
             mutation.addedNodes.forEach((node) => {
@@ -143,6 +215,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-    
+
     mutationObserver.observe(catalogContainer, config);
 });
