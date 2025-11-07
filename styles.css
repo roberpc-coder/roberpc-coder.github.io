@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -15,7 +15,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* Contenedor principal del título y buscador */
 .title-search-container {
   position: fixed;
   top: 0;
@@ -30,7 +29,6 @@ body {
   align-items: center;
 }
 
-/* Sección del título */
 .title-section {
   display: flex;
   align-items: center;
@@ -39,7 +37,7 @@ body {
 
 .title-section i {
   font-size: 2rem;
-  color: #4CAF50;
+  color: #4caf50;
   margin-right: 12px;
   vertical-align: middle;
   text-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
@@ -51,14 +49,13 @@ body {
   vertical-align: middle;
   font-size: 1.8rem;
   font-weight: bold;
-  background: linear-gradient(45deg, #4CAF50, #8BC34A, #CDDC39);
+  background: linear-gradient(45deg, #4caf50, #8bc34a, #cddc39);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   white-space: nowrap;
 }
 
-/* Sección del buscador */
 .search-section {
   display: flex;
   gap: 15px;
@@ -68,7 +65,8 @@ body {
   justify-content: flex-end;
 }
 
-#searchInput, #platformSelect {
+#searchInput,
+#platformSelect {
   padding: 12px 15px;
   border-radius: 6px;
   border: none;
@@ -155,7 +153,8 @@ body {
 }
 
 /* 📡 Estados */
-.loading, .error {
+.loading,
+.error {
   text-align: center;
   padding: 20px;
   font-size: 18px;
@@ -176,22 +175,55 @@ body {
     justify-content: center;
     margin-bottom: 10px;
   }
-  .title-section i { font-size: 1.8rem; }
-  .title-section h1 { font-size: 1.5rem; }
-  .search-section { max-width: 100%; justify-content: center; }
-  #searchInput { min-width: 150px; }
-  #platformSelect { min-width: 120px; }
-  .catalog-container { grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 140px; }
-  .game-title { font-size: 0.9rem; }
+  .title-section i {
+    font-size: 1.8rem;
+  }
+  .title-section h1 {
+    font-size: 1.5rem;
+  }
+  .search-section {
+    max-width: 100%;
+    justify-content: center;
+  }
+  #searchInput {
+    min-width: 150px;
+  }
+  #platformSelect {
+    min-width: 120px;
+  }
+  .catalog-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 140px;
+  }
+  .game-title {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
-  .title-search-container { padding: 10px; }
-  .title-section i { font-size: 1.5rem; margin-right: 8px; }
-  .title-section h1 { font-size: 1.2rem; }
-  .search-section { flex-direction: column; gap: 10px; }
-  #searchInput, #platformSelect { width: 100%; min-width: auto; }
-  .catalog-container { margin-top: 160px; }
+  .title-search-container {
+    padding: 10px;
+  }
+  .title-section i {
+    font-size: 1.5rem;
+    margin-right: 8px;
+  }
+  .title-section h1 {
+    font-size: 1.2rem;
+  }
+  .search-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #searchInput,
+  #platformSelect {
+    width: 100%;
+    min-width: auto;
+  }
+  .catalog-container {
+    margin-top: 160px;
+  }
 }
 
 /* ==================================== */
@@ -225,15 +257,33 @@ body {
 .loading-spinner {
   border: 3px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-  border-top: 3px solid #4CAF50;
+  border-top: 3px solid #4caf50;
   width: 25px;
   height: 25px;
   animation: spin 1s linear infinite;
   margin: 0 auto 8px;
 }
 
-@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-@keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 /* Estilos para el botón de estrenos */
 .estrenos-btn {
@@ -251,17 +301,20 @@ body {
   align-items: center;
   gap: 8px;
 }
-.estrenos-btn:hover { background-color: #c2185b; }
+
+.estrenos-btn:hover {
+  background-color: #c2185b;
+}
 
 @media (min-width: 768px) {
   .search-section {
-    justify-content: center;   /* centra buscador + select + estrenos */
-    gap: 20px;                 /* espacio entre ellos */
-    margin-right: 100px;       /* deja hueco a la derecha para el carrito flotante */
+    justify-content: center; /* centra buscador + select + estrenos */
+    gap: 20px; /* espacio entre ellos */
+    margin-right: 100px; /* deja hueco a la derecha para el carrito flotante */
   }
 
   .estrenos-btn {
-    margin-right: 0;           /* ya no necesita empujarse sola */
+    margin-right: 0; /* ya no necesita empujarse sola */
   }
 }
 
@@ -274,13 +327,13 @@ body {
   padding: 15px;
   border-radius: 8px;
   max-width: 600px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .cart-container h2 {
   margin-bottom: 10px;
   text-align: center;
-  color: #4CAF50;
+  color: #4caf50;
 }
 
 #cartList {
@@ -298,12 +351,21 @@ body {
   font-size: 14px;
 }
 
-#cartList button {
-  background: transparent;
+/* Botón eliminar ❌ */
+.remove-btn {
+  background-color: #222; /* fondo oscuro */
   border: none;
-  color: #ff5252;
+  color: #ff5252; /* X roja */
   cursor: pointer;
   font-size: 16px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.remove-btn:hover {
+  background-color: #333;
+  color: #ff0000;
 }
 
 #cartTotal {
@@ -312,74 +374,73 @@ body {
   text-align: right;
   color: #fff;
 }
+#cartTotal::before {
+  content: "💲 ";
+}
 
-#sendWhatsApp {
+.cart-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 16px;
+  gap: 10px;
+}
+
+/* Botón WhatsApp */
+.whatsapp-btn {
   display: block;
-  background: #25D366;
+  width: 100%;
+  background-color: #25d366;
   color: #fff;
-  padding: 10px;
-  border-radius: 6px;
   text-align: center;
   text-decoration: none;
+  padding: 12px;
+  border-radius: 6px;
   font-weight: bold;
-  transition: background 0.3s;
+  font-size: 16px;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+.whatsapp-btn:hover {
+  background-color: #23c85f;
+  box-shadow: 0 0 6px rgba(37, 211, 102, 0.35);
+}
+.whatsapp-btn:active {
+  background-color: #1ebe5d;
+  transform: scale(0.98);
 }
 
-#sendWhatsApp:hover {
-  background: #1ebe5d;
-}
-
-.btn-group {
-  display: flex;
-  gap: 6px;
-}
-
-.btn-group .details-btn,
-.btn-group .add-cart-btn {
-  flex: 1;
-  padding: 6px 8px;
-  font-size: 0.8rem;
-}
-
-/* ========================= */
-/* 🎮 Botones del catálogo */
-/* ========================= */
-.btn-group .details-btn {
-  background-color: #4CAF50; 
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s;
-  padding: 6px 8px;
-  font-size: 0.8rem;
-}
-
-.btn-group .details-btn:hover {
-  background-color: #45a049;
-}
-
-.btn-group .add-cart-btn {
-  background-color: #E53935; /* rojo igual al ícono del carrito */
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s;
-  padding: 6px 8px;
-  font-size: 0.8rem;
-}
-
-.btn-group .add-cart-btn:hover {
-  background-color: #C62828;
-}
-
-.btn-group .add-cart-btn:disabled {
-  background-color: #777 !important;
+/* Botón Vaciar carrito */
+.clear-cart-btn {
+  width: 100%;
+  background-color: #d32f2f;
   color: #fff;
-  cursor: not-allowed;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+.clear-cart-btn:hover {
+  background-color: #b71c1c;
+  box-shadow: 0 0 6px rgba(211, 47, 47, 0.35);
+}
+.clear-cart-btn:active {
+  background-color: #9a0007;
+  transform: scale(0.98);
+}
+
+@media (max-width: 480px) {
+  .whatsapp-btn,
+  .clear-cart-btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    box-shadow: none;
+  }
 }
 
 /* 🛒 Carrito flotante estilo gamer */
@@ -394,15 +455,15 @@ body {
   width: 56px;
   height: 56px;
   border-radius: 8px;
-  background-color: #1e1e1e;   /* fondo oscuro */
-  border: 2px solid #E53935;   /* borde rojo gamer */
+  background-color: #1e1e1e; /* fondo oscuro */
+  border: 2px solid #e53935; /* borde rojo gamer */
   text-decoration: none;
   box-shadow: 0 0 12px rgba(229, 57, 53, 0.6);
 }
 
 .cart-btn i {
   font-size: 2rem;
-  color: #E53935;
+  color: #e53935;
   transition: transform 0.3s, color 0.3s;
 }
 
@@ -413,15 +474,15 @@ body {
 
 .cart-btn i:hover {
   transform: scale(1.2);
-  color: #FF1744;
+  color: #ff1744;
 }
 
 /* 🔢 Contador en la esquina del ícono */
 .cart-count {
   position: absolute;
-  top: -6px;   /* lo sube arriba */
-  right: -6px; /* lo corre a la esquina */
-  background: #E53935;
+  top: -6px;
+  right: -6px;
+  background: #e53935;
   color: white;
   font-size: 0.75rem;
   font-weight: bold;
@@ -439,127 +500,195 @@ body {
 }
 
 @keyframes bump {
-  0%   { transform: scale(1); }
-  30%  { transform: scale(1.3); }
-  60%  { transform: scale(0.9); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.3);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-/* 🎮 Botones en estrenos (igual que en principal) */
-.game-buttons {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 8px;
-}
-
-.game-buttons .add-cart-btn,
-.game-buttons .details-btn {
-  flex: 1;
-  padding: 8px 12px;
-  font-size: 0.85rem;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  border: none;
-}
-
-/* Botón Comprar */
-.game-buttons .add-cart-btn {
-  background-color: #E53935;
+/* 🎮 Botones del catálogo (unificados para index y estrenos) */
+.details-btn {
+  background-color: #4caf50;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  padding: 6px 8px;
+  font-size: 0.85rem;
+}
+.details-btn:hover {
+  background-color: #45a049;
 }
 
-.game-buttons .add-cart-btn:hover {
-  background-color: #C62828;
+.add-cart-btn {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  padding: 6px 8px;
+  font-size: 0.85rem;
 }
-
-.game-buttons .add-cart-btn:disabled,
-.game-buttons .add-cart-btn.in-cart {
+.add-cart-btn:hover {
+  background-color: #c62828;
+}
+.add-cart-btn:disabled,
+.add-cart-btn.in-cart {
   background-color: #777 !important;
   color: #fff;
   cursor: not-allowed;
 }
 
-/* Botón Detalles */
-.game-buttons .details-btn {
-  background-color: #4CAF50;
-  color: white;
+/* ========================= */
+/* 🎮 Estilos de página de detalles */
+/* ========================= */
+.details-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-.game-buttons .details-btn:hover {
-  background-color: #45a049;
-}
-
-.cart-actions {
+.details-header {
   display: flex;
-  flex-direction: column; /* apila uno debajo del otro */
-  align-items: stretch;   /* ambos ocupan todo el ancho */
-  margin-top: 16px;
-  gap: 10px;              /* espacio entre botones */
+  flex-wrap: wrap;
 }
 
-/* Botón WhatsApp */
-.whatsapp-btn {
-  display: block;
-  width: 100%;
-  background-color: #25d366;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  padding: 12px;
+.details-cover {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.details-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.details-title {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.details-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.meta-item {
+  background-color: #2a2a2a;
+  padding: 15px;
   border-radius: 6px;
+}
+
+.meta-label {
+  font-size: 14px;
+  color: #4caf50;
+  margin-bottom: 5px;
   font-weight: bold;
-  font-size: 16px;
-  transition: background-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-.whatsapp-btn:hover {
-  background-color: #23c85f; /* cambio leve en PC */
-  box-shadow: 0 0 6px rgba(37, 211, 102, 0.35);
-}
-
-.whatsapp-btn:active {
-  background-color: #1ebe5d; /* feedback en móvil */
-  transform: scale(0.98);
-}
-
-/* Botón Vaciar carrito */
-.clear-cart-btn {
-  width: 100%;
-  background-color: #d32f2f;
-  color: #fff;
-  border: none;
-  padding: 12px;
-  border-radius: 6px;
+.meta-value {
+  font-size: 18px;
   font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+  color: #ffffff;
 }
 
-.clear-cart-btn:hover {
-  background-color: #b71c1c; /* hover en PC */
-  box-shadow: 0 0 6px rgba(211, 47, 47, 0.35);
+.details-description {
+  padding: 20px;
+  line-height: 1.6;
+  background-color: #252525;
 }
 
-.clear-cart-btn:active {
-  background-color: #9a0007; /* feedback en móvil */
-  transform: scale(0.98);
+.details-description h2 {
+  margin-bottom: 15px;
+  color: #4caf50;
 }
 
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 480px) {
-  .whatsapp-btn,
-  .clear-cart-btn {
+@media (max-width: 768px) {
+  .details-header {
+    flex-direction: column;
+  }
+  .details-cover {
     width: 100%;
-    font-size: 14px;
-    padding: 10px;
-    box-shadow: none; /* más limpio en móvil */
+    height: auto;
+  }
+  .details-title {
+    font-size: 24px;
+  }
+  .details-meta {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
+.details-description p {
+  white-space: pre-line; /* respeta saltos de línea del CSV */
+}
 
+.details-info .btn-group {
+  display: flex;
+  justify-content: center; /* centra solo el botón en detalles */
+  margin-top: 15px;
+}
 
+.btn-group {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center; /* mantiene alineación vertical */
+  gap: 10px; /* espacio entre los botones */
+  margin-top: 10px;
+  flex-wrap: wrap; /* permite que bajen si no caben en pantallas pequeñas */
+}
 
+.details-btn,
+.add-cart-btn {
+  flex: 1; /* que ocupen espacio proporcional */
+  max-width: 120px; /* límite para que no se estiren demasiado */
+  padding: 6px 10px; /* tamaño cómodo */
+  font-size: 0.85rem; /* texto proporcional */
+  box-sizing: border-box; /* asegura que padding cuente dentro del ancho */
+}
+
+/* Título principal responsivo */
+.title-section h1 {
+  font-size: clamp(1.2rem, 5vw, 2rem); /* escala según ancho de pantalla */
+  margin: 0;
+  line-height: 1.2;
+  word-break: break-word;
+  text-align: center; /* centrado por defecto */
+}
+
+/* En pantallas pequeñas */
+@media (max-width: 768px) {
+  .title-search-container {
+    flex-direction: column; /* apila título y buscador */
+    align-items: flex-start; /* alinea a la izquierda */
+  }
+
+  .title-section h1 {
+    text-align: left;
+    font-size: 1.2rem; /* fuerza tamaño más pequeño en móvil */
+  }
+
+  .search-section {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrito - ROBER®PC</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-  <div class="header">
-    <div class="title-search-container">
-      <div class="title-section">
-        <i class="fas fa-shopping-cart"></i>
-        <h1>Mi Carrito</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito – ROBER®PC</title>
+    <link rel="icon" href="imagenes/icono.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="title-search-container">
+        <div class="title-section">
+          <i class="fas fa-shopping-cart"></i>
+          <h1>Mi Carrito</h1>
+        </div>
       </div>
     </div>
-  </div>
 
-<!-- Carrito -->
-<div class="cart-container" style="margin-top:120px;">
-  <h2>🛒 Lista de juegos</h2>
-  <ul id="cartList"></ul>
-  <p id="cartTotal"><strong>Total:</strong> 0 CUP</p>
+    <div class="cart-container">
+      <h2>🛒 Lista de juegos</h2>
+      <ul id="cartList"></ul>
+      <p id="cartTotal"><strong>Total:</strong> 0 CUP</p>
 
-  <div class="cart-actions">
-    <!-- Enviar por WhatsApp: mantenemos el ID que usa tu JS -->
-    <a id="sendWhatsApp" class="whatsapp-btn" href="javascript:void(0)">
-      💬 Enviar por WhatsApp
-    </a>
+      <div class="cart-actions">
+        <a id="sendWhatsApp" class="whatsapp-btn" href="javascript:void(0)">
+          💬 Enviar por WhatsApp
+        </a>
+        <button id="clearCartBtn" class="clear-cart-btn">
+          🗑️ Vaciar carrito
+        </button>
+      </div>
+    </div>
 
-    <!-- Nuevo botón Vaciar carrito (ID que usará el JS) -->
-    <button id="clearCartBtn" class="clear-cart-btn">
-      🗑️ Vaciar carrito
-    </button>
-  </div>
-</div>
-
-<!-- Script del carrito -->
-<script src="carrito.js"></script>
-</body>
+    <script src="carrito.js"></script>
+  </body>
 </html>
-
