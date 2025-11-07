@@ -692,3 +692,22 @@ body {
     margin-top: 10px;
   }
 }
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  flex-wrap: nowrap; /* siempre en línea */
+}
+
+.btn-group button {
+  flex: 1 1 0; /* se reparten el espacio */
+  min-width: 0; /* evita desbordes */
+  font-size: clamp(0.6rem, 2vw, 0.9rem); /* texto escala según pantalla */
+  padding: 6px 8px;
+  white-space: normal; /* permite salto de línea */
+  overflow-wrap: break-word; /* parte palabras largas */
+  text-align: center; /* centra el texto */
+}
