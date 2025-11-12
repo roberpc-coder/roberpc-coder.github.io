@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return [];
     }
   }
+
   function setCart(nextCart) {
     localStorage.setItem("cart", JSON.stringify(nextCart));
     window.dispatchEvent(new Event("storage"));
@@ -21,16 +22,19 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateCartView() {
     cartContainer.innerHTML = "";
     let total = 0;
+    let totalGB = 0;
 
     if (!cart || cart.length === 0) {
       cartContainer.innerHTML = "<li>Tu carrito está vacío.</li>";
-      totalContainer.textContent = "Total: 0 CUP";
+      totalContainer.textContent = "Total: 0 Gb | 0 CUP";
       return;
     }
 
     cart.forEach((game, index) => {
       const li = document.createElement("li");
-      li.textContent = `${game.Nombre} (${game.Tamaño}) - ${game.Precio} CUP`;
+      const plataforma = game.Plataforma ?? game.plataforma ?? "Sin plataforma";
+      const tamaño = game.Tamaño?.replace(/GB|gb/g, "Gb");
+      li.textContent = `${game.Nombre} [${plataforma}] (${tamaño}) - ${game.Precio} Cup`;
 
       const removeBtn = document.createElement("button");
       removeBtn.className = "remove-btn";
@@ -46,9 +50,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const p = parseFloat(game.Precio);
       if (!isNaN(p)) total += p;
+
+      const gb = parseFloat(game.Tamaño);
+      if (!isNaN(gb)) totalGB = Math.round((totalGB + gb) * 100) / 100; // ✅ evita residuos
     });
 
-    totalContainer.textContent = `Total: ${total} CUP`;
+    totalContainer.textContent = `Total: ${Math.round(
+      totalGB
+    )} Gb | ${total} Cup`; // ✅ limpio
   }
 
   function vaciarCarrito() {
@@ -65,23 +74,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
       let message = "🛒 Lista de juegos:\n\n";
       let total = 0;
+      let totalGB = 0;
 
       cart.forEach((g) => {
-        message += `- ${g.Nombre} (${g.Tamaño}) - ${g.Precio} CUP\n`;
-        const p = parseFloat(g.Precio);
-        if (!isNaN(p)) total += p;
+        const precio = parseFloat(g.Precio);
+        const gb = parseFloat(g.Tamaño);
+        if (!isNaN(precio)) total += precio;
+        if (!isNaN(gb)) totalGB = Math.round((totalGB + gb) * 100) / 100; // ✅ evita residuos
+
+        const tamaño = g.Tamaño?.replace(/GB|gb/g, "Gb");
+        const plataforma = g.Plataforma ?? g.plataforma ?? "Sin plataforma";
+        message += `- ${g.Nombre} [${plataforma}] (${tamaño}) - ${precio} Cup\n`;
       });
 
-      message += `\nTotal: ${total} CUP`;
+      message += `\nTotal: ${Math.round(totalGB)} Gb | ${total} Cup`; // ✅ limpio
 
       const url = `https://wa.me/5358024782?text=${encodeURIComponent(
         message
       )}`;
       window.open(url, "_blank");
-
-      if (confirm("¿Desea vaciar el carrito después de enviar el pedido?")) {
-        vaciarCarrito();
-      }
     });
   }
 

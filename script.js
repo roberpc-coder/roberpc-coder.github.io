@@ -51,7 +51,16 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       filteredGames = [...gamesData];
-      renderGames();
+
+      // Restaurar filtro después de cargar juegos
+      const filtro = localStorage.getItem("filtroPlataforma");
+      if (filtro && platformSelect) {
+        platformSelect.value = filtro;
+        filterGames();
+      } else {
+        renderGames();
+      }
+
       setupScrollListener();
     },
     error: function (error) {
@@ -82,6 +91,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     catalogContainer.appendChild(fragment);
     currentIndex = endIndex;
+
+    // 👇 Restaurar scroll solo una vez, después del primer render
+    if (!window.scrollRestored) {
+      const pos = localStorage.getItem("scrollPos");
+      if (pos) {
+        window.scrollTo(0, parseInt(pos, 10));
+      }
+      window.scrollRestored = true;
+    }
   }
 
   function createGameCard(game) {
@@ -106,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h3 class="game-title">${game.Nombre}</h3>
                 <p class="game-size">📦 ${
                   game.Tamaño || "Tamaño no disponible"
-                }  💲${precio} CUP</p>
+                }  💲${precio} Cup</p>
                 <div class="btn-group">
                     <button class="details-btn" data-id="${
                       game.id
@@ -181,11 +199,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     catalogContainer.innerHTML = "";
     renderGames();
+
+    // 👇 Reinicia scroll arriba solo en cambio de filtro/búsqueda
+    window.scrollTo(0, 0);
   }
 
   // Event listeners
-  searchInput.addEventListener("input", filterGames);
-  platformSelect.addEventListener("change", filterGames);
+  searchInput.addEventListener("input", () => {
+    filterGames();
+  });
+  platformSelect.addEventListener("change", () => {
+    filterGames();
+    localStorage.setItem("filtroPlataforma", platformSelect.value);
+  });
 
   // Delegación de eventos para botones
   catalogContainer.addEventListener("click", (e) => {
@@ -204,9 +230,11 @@ document.addEventListener("DOMContentLoaded", function () {
           cart.push({
             id: game.id,
             Nombre: game.Nombre,
+            Plataforma: game.Plataforma,
             Tamaño: game.Tamaño,
             Precio: calcularPrecio(game.Nombre, game.Plataforma, game.Tamaño),
           });
+
           setCart(cart);
 
           e.target.textContent = "En carrito";
@@ -225,10 +253,20 @@ document.addEventListener("DOMContentLoaded", function () {
     catalogContainer.innerHTML = "";
     renderGames();
     updateCartCount();
+
+    // 👇 Forzar inicio arriba y limpiar posición guardada
+    window.scrollTo(0, 0);
+    localStorage.removeItem("scrollPos");
+    window.scrollRestored = false;
   });
 
   // Inicializar contador al cargar
   initCartCount();
+
+  // Guardar scroll antes de salir de la página
+  window.addEventListener("beforeunload", () => {
+    localStorage.setItem("scrollPos", window.scrollY);
+  });
 });
 
 // Animación de imágenes al cargarse

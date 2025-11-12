@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h3 class="game-title">${game.Nombre}</h3>
                 <p class="game-size">📦 ${
                   game.Tamaño || "N/D"
-                }   💲${precio} CUP</p>
+                }   💲${precio} Cup</p>
                 <div class="btn-group">
                     <button class="details-btn" data-id="${
                       game.id
@@ -106,9 +106,11 @@ document.addEventListener("DOMContentLoaded", function () {
       cart.push({
         id: game.id,
         Nombre: game.Nombre,
+        Plataforma: game.Plataforma,
         Tamaño: game.Tamaño,
         Precio: calcularPrecio(game.Nombre, game.Plataforma, game.Tamaño),
       });
+
       localStorage.setItem("cart", JSON.stringify(cart));
       updateCartCount();
 

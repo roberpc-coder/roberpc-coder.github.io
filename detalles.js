@@ -88,11 +88,13 @@ document.addEventListener("DOMContentLoaded", () => {
         cart = JSON.parse(localStorage.getItem("cart")) || [];
         if (!cart.some((item) => item.id === game.id)) {
           cart.push({
+            Plataforma: game.Plataforma,
             id: game.id,
             Nombre: game.Nombre,
             Tamaño: game.Tamaño,
-            Precio: precio,
+            Precio: calcularPrecio(game.Nombre, game.Plataforma, game.Tamaño),
           });
+
           localStorage.setItem("cart", JSON.stringify(cart));
           window.dispatchEvent(new Event("storage"));
           addBtn.textContent = "En carrito";

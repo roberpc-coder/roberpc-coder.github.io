@@ -18,7 +18,7 @@ function calcularPrecio(nombre, plataforma, tamaño) {
 
   if (plataforma.includes("nintendo switch")) return 100;
   if (plataforma.includes("pc online")) return 500;
-  if (plataforma.includes("pc emulado")) return 100;
+  if (plataforma.includes("emulados en pc")) return 100;
 
   if (!isNaN(t)) {
     if (t <= 4.9) return 50;

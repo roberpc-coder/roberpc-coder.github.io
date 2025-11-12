@@ -50,7 +50,9 @@ body {
   font-size: 1.8rem;
   font-weight: bold;
   background: linear-gradient(45deg, #4caf50, #8bc34a, #cddc39);
+  background-clip: text;
   -webkit-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   white-space: nowrap;
@@ -139,6 +141,7 @@ body {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   overflow: hidden;
   margin-bottom: 6px;
   text-align: center;
@@ -373,9 +376,6 @@ body {
   margin: 10px 0;
   text-align: right;
   color: #fff;
-}
-#cartTotal::before {
-  content: "💲 ";
 }
 
 .cart-actions {
