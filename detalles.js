@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <div class="meta-item">
                   <div class="meta-label">Precio</div>
-                  <div class="meta-value">${precio} CUP</div>
+                  <div class="meta-value">${precio} Cup</div>
                 </div>
               </div>
               <div class="btn-group">

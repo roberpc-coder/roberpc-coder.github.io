@@ -219,6 +219,14 @@ document.addEventListener("DOMContentLoaded", function () {
       const gameId = e.target.getAttribute("data-id");
       window.location.href = `detalles.html?id=${gameId}`;
     }
+
+    // 👉 Clic en portada
+    if (e.target.classList.contains("game-cover")) {
+      const card = e.target.closest(".game-card");
+      const gameId = card.querySelector(".details-btn").getAttribute("data-id");
+      window.location.href = `detalles.html?id=${gameId}`;
+    }
+
     if (e.target.classList.contains("add-cart-btn")) {
       const gameId = e.target.getAttribute("data-id");
       const game = gamesData.find((g) => g.id === gameId);

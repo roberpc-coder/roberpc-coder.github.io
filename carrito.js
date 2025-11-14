@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!cart || cart.length === 0) {
       cartContainer.innerHTML = "<li>Tu carrito está vacío.</li>";
-      totalContainer.textContent = "Total: 0 Gb | 0 CUP";
+      totalContainer.textContent = "Total: 0 Gb | 0 ";
       return;
     }
 
